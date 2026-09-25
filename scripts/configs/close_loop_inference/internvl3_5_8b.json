@@ -1,0 +1,19 @@
+{
+  "MODEL_NAME": "InternVL3_5",
+  "MODEL_PATH": "/path/to/models/InternVL3_5-8B-Instruct",
+  "GPU_ID": 0,
+  "PORT": 8000,
+  "IN_CARLA": true,
+  "USE_BASE64": false,
+  "CONTROL_RATE": 4,
+  "TASK_CONFIGS": {
+    "FRAME_PER_SEC": 4
+  },
+  "INFERENCE_BASICS": {
+    "INPUT_WINDOW": 1,
+    "CONVERSATION_WINDOW": 1,
+    "USE_ALL_CAMERAS": false,
+    "USE_BEV": true,
+    "NO_HISTORY_MODE": true
+  }
+}

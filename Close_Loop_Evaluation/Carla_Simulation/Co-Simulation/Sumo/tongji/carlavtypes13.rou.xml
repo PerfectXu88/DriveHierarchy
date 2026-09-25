@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--generated on 2023-12-06 16:30:15 by create_sumo_vtypes.py-->
+<routes>
+  <vType id="vehicle.audi.a2" length="3.705369472503662" width="1.788678526878357" height="1.549050211906433" vClass="passenger"/>
+  <vType id="vehicle.chevrolet.impala" length="5.357479572296143" width="2.033202886581421" height="1.4106587171554565" vClass="passenger"/>
+  <vType id="vehicle.citroen.c3" length="3.987684965133667" width="1.8508483171463013" height="1.6171095371246338" vClass="passenger"/>
+  <vType id="vehicle.micro.microlino" length="2.2072951793670654" width="1.4809197187423706" height="1.3760247230529785" vClass="evehicle"/>
+  <vType id="vehicle.dodge.charger_police" length="4.974244117736816" width="2.0384011268615723" height="1.5421181917190552" vClass="authority" guiShape="police"/>
+  <vType id="vehicle.audi.tt" length="4.181210041046143" width="1.9941171407699585" height="1.385296106338501" vClass="passenger"/>
+  <vType id="vehicle.jeep.wrangler_rubicon" length="3.866220712661743" width="1.9051965475082397" height="1.8779358863830566" vClass="passenger"/>
+  <vType id="vehicle.mercedes.coupe" length="5.0267767906188965" width="2.1515462398529053" height="1.6506516933441162" vClass="passenger"/>
+  <vType id="vehicle.mercedes.coupe_2020" length="4.673638820648193" width="1.8118125200271606" height="1.441947340965271" vClass="passenger"/>
+  <vType id="vehicle.harley-davidson.low_rider" length="2.3557403087615967" width="0.7636788487434387" height="1.2765706777572632" vClass="motorcycle"/>
+  <vType id="vehicle.dodge.charger_2020" length="5.0078253746032715" width="1.8816219568252563" height="1.5347249507904053" vClass="passenger"/>
+  <vType id="vehicle.ford.ambulance" length="6.36564302444458" width="2.3511743545532227" height="2.431375741958618" vClass="emergency"/>
+  <vType id="vehicle.lincoln.mkz_2020" length="4.89238166809082" width="1.8367133140563965" height="1.490277647972107" vClass="passenger"/>
+  <vType id="vehicle.mini.cooper_s_2021" length="4.552699089050293" width="2.097072124481201" height="1.7671663761138916" vClass="hov"/>
+  <vType id="vehicle.toyota.prius" length="4.513522624969482" width="2.006814479827881" height="1.5248334407806396" vClass="evehicle"/>
+  <vType id="vehicle.ford.crown" length="5.365678787231445" width="1.8007241487503052" height="1.5749659538269043" vClass="taxi"/>
+  <vType id="vehicle.carlamotors.carlacola" length="5.203838348388672" width="2.6269896030426025" height="2.467444658279419" vClass="truck" guiShape="truck"/>
+  <vType id="vehicle.vespa.zx125" length="1.8046669960021973" width="0.85568767786026" height="1.235628366470337" vClass="moped"/>
+  <vType id="vehicle.nissan.patrol_2021" length="5.565828800201416" width="2.1499669551849365" height="2.045147180557251" vClass="passenger"/>
+  <vType id="vehicle.dodge.charger_police_2020" length="5.237514495849609" width="1.9297595024108887" height="1.638383150100708" vClass="authority" guiShape="police"/>
+  <vType id="vehicle.mercedes.sprinter" length="5.91519021987915" width="1.9884328842163086" height="2.560655355453491" vClass="hov" guiShape="passenger/sedan"/>
+  <vType id="vehicle.audi.etron" length="4.855708599090576" width="2.0327565670013428" height="1.6493593454360962" vClass="evehicle"/>
+  <vType id="vehicle.seat.leon" length="4.1928300857543945" width="1.8161858320236206" height="1.4738311767578125" vClass="passenger"/>
+  <vType id="vehicle.volkswagen.t2_2021" length="4.442183971405029" width="1.77456533908844" height="1.9872066974639893" vClass="bus"/>
+  <vType id="vehicle.tesla.cybertruck" length="6.273553371429443" width="2.3895740509033203" height="2.098191261291504" vClass="evehicle"/>
+  <vType id="vehicle.lincoln.mkz_2017" length="4.901683330535889" width="2.128324270248413" height="1.5107464790344238" vClass="passenger"/>
+  <vType id="vehicle.ford.mustang" length="4.717525005340576" width="1.894826889038086" height="1.300939917564392" vClass="passenger"/>
+  <vType id="vehicle.carlamotors.firetruck" length="8.46804141998291" width="2.8910882472991943" height="3.8274123668670654" vClass="emergency" guiShape="firebrigade"/>
+  <vType id="vehicle.volkswagen.t2" length="4.4804368019104" width="2.069315195083618" height="2.0377919673919678" vClass="passenger" guiShape="passenger/van"/>
+  <vType id="vehicle.tesla.model3" length="4.791779518127441" width="2.163450002670288" height="1.4876600503921509" vClass="evehicle"/>
+  <vType id="vehicle.diamondback.century" length="1.6428436040878296" width="0.3725162446498871" height="1.0239027738571167" vClass="bicycle"/>
+  <vType id="vehicle.gazelle.omafiets" length="1.8354405164718628" width="0.3289288878440857" height="1.1256572008132935" vClass="bicycle"/>
+  <vType id="vehicle.bmw.grandtourer" length="4.611005783081055" width="2.241713285446167" height="1.6672759056091309" vClass="passenger"/>
+  <vType id="vehicle.bh.crossbike" length="1.4872888326644897" width="0.8592574596405029" height="1.0795789957046509" vClass="bicycle"/>
+  <vType id="vehicle.kawasaki.ninja" length="2.0333523750305176" width="0.8025798797607422" height="1.1454535722732544" vClass="motorcycle"/>
+  <vType id="vehicle.yamaha.yzf" length="2.2094459533691406" width="0.8670341968536377" height="1.2511454820632935" vClass="motorcycle"/>
+  <vType id="vehicle.nissan.patrol" length="4.6045098304748535" width="1.9315929412841797" height="1.8548461198806763" vClass="passenger"/>
+  <vType id="vehicle.nissan.micra" length="3.633375883102417" width="1.845113754272461" height="1.5012825727462769" vClass="passenger"/>
+  <vType id="vehicle.mini.cooper_s" length="3.805800199508667" width="1.970275640487671" height="1.4750301837921143" vClass="passenger"/>
+</routes>

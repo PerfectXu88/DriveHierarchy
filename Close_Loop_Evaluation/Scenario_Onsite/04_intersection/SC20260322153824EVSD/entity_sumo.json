@@ -1,0 +1,1318 @@
+{
+  "schema_version": 1,
+  "source": {
+    "entity_json": "/mnt/data/Bench4LMAD_L4_Carla/Scenario_Onsite/04_intersection/SC20260322153824EVSD/entity.json",
+    "net_file": "/mnt/data/Bench4LMAD_L4_Carla/Carla_Simulation/Co-Simulation/Sumo/tongji/tongji.net.xml",
+    "vtypes_json": "/mnt/data/Bench4LMAD_L4_Carla/Carla_Simulation/Co-Simulation/Sumo/data/vtypes.json"
+  },
+  "map": {
+    "name": "tongji",
+    "net_offset": [
+      761.28,
+      488.05
+    ]
+  },
+  "hero": {
+    "actor_id": "1",
+    "name": "主车",
+    "role": "main",
+    "sumo_type_id": "vehicle.lincoln.mkz_2020",
+    "vclass": "passenger",
+    "route_id": "entity_route_1",
+    "route_edges": [
+      "-124",
+      "152",
+      "-161",
+      "-162",
+      "-163",
+      "-104",
+      "-98",
+      "-100",
+      "-102",
+      "163",
+      "162",
+      "161",
+      "-152",
+      "-155",
+      "123",
+      "122",
+      "-111"
+    ],
+    "depart": {
+      "time_seconds": 0.0,
+      "edge_id": "-124",
+      "lane_index": 2,
+      "lane_id": "-124_2",
+      "lane_pos": 0.0,
+      "speed_kmh": 0.0
+    },
+    "arrival": {
+      "edge_id": "-111"
+    },
+    "carla_spawn": {
+      "x": -590.8745289613684,
+      "y": 101.74776321748948,
+      "z": 14.0,
+      "yaw": -120.65083971671724
+    },
+    "reference_points": [
+      {
+        "frame_id": 0,
+        "point_type": "start",
+        "pass": true,
+        "speed_kmh": 0.0,
+        "longitude": 121.2030811894951,
+        "latitude": 31.291912048881553,
+        "sumo_x": 170.40547103863162,
+        "sumo_y": 386.30223678251053,
+        "carla_x": -590.8745289613684,
+        "carla_y": 101.74776321748948
+      },
+      {
+        "frame_id": 1,
+        "point_type": "pathway",
+        "pass": true,
+        "speed_kmh": 20.0,
+        "longitude": 121.2029733835324,
+        "latitude": 31.29206825121799,
+        "sumo_x": 160.1420302787725,
+        "sumo_y": 403.62167468279307,
+        "carla_x": -601.1379697212275,
+        "carla_y": 84.42832531720694
+      },
+      {
+        "frame_id": 2,
+        "point_type": "end",
+        "pass": true,
+        "speed_kmh": 20.0,
+        "longitude": 121.2026890680588,
+        "latitude": 31.292346875009603,
+        "sumo_x": 133.07364961416215,
+        "sumo_y": 434.51553264924286,
+        "carla_x": -628.2063503858378,
+        "carla_y": 53.534467350757154
+      }
+    ],
+    "matched_points": [
+      {
+        "point_index": 0,
+        "edge_id": "-124",
+        "lane_id": "-124_2",
+        "lane_index": 2,
+        "lane_pos": 0.0,
+        "distance_to_lane": 3.1949215337374555
+      },
+      {
+        "point_index": 1,
+        "edge_id": "122",
+        "lane_id": "122_2",
+        "lane_index": 2,
+        "lane_pos": 14.304890696743017,
+        "distance_to_lane": 0.025912413956917894
+      },
+      {
+        "point_index": 2,
+        "edge_id": "-111",
+        "lane_id": "-111_2",
+        "lane_index": 2,
+        "lane_pos": 4.98,
+        "distance_to_lane": 1.3894574407979199
+      }
+    ],
+    "estimated_duration_seconds": 14.640992068084657
+  },
+  "background_vehicles": [
+    {
+      "actor_id": "100",
+      "name": "从车1",
+      "role": "slave",
+      "sumo_type_id": "vehicle.volkswagen.t2_2021",
+      "vclass": "bus",
+      "route_id": "entity_route_100",
+      "route_edges": [
+        "-108#1",
+        "-109",
+        "-134"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-108#1",
+        "lane_index": 1,
+        "lane_id": "-108#1_1",
+        "lane_pos": 1.3283045443516805,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-134"
+      },
+      "carla_spawn": {
+        "x": -635.5020445137673,
+        "y": 91.95114264447733,
+        "z": 14.0,
+        "yaw": -41.11555576629714
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20261246641716,
+          "latitude": 31.2920003831282,
+          "sumo_x": 125.77795548623271,
+          "sumo_y": 396.0988573555227,
+          "carla_x": -635.5020445137673,
+          "carla_y": 91.95114264447733
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20311728050358,
+          "latitude": 31.292378802414788,
+          "sumo_x": 173.8446661933525,
+          "sumo_y": 438.0531083425986,
+          "carla_x": -587.4353338066475,
+          "carla_y": 49.99689165740142
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-108#1",
+          "lane_id": "-108#1_1",
+          "lane_index": 1,
+          "lane_pos": 1.3283045443516805,
+          "distance_to_lane": 0.41488960629330507
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-134",
+          "lane_id": "-134_1",
+          "lane_index": 1,
+          "lane_pos": 22.46307854349445,
+          "distance_to_lane": 0.09640542792728125
+        }
+      ],
+      "estimated_duration_seconds": 22.9683607140316
+    },
+    {
+      "actor_id": "102",
+      "name": "从车2",
+      "role": "slave",
+      "sumo_type_id": "vehicle.volkswagen.t2_2021",
+      "vclass": "bus",
+      "route_id": "entity_route_102",
+      "route_edges": [
+        "-516",
+        "-120",
+        "109"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-516",
+        "lane_index": 2,
+        "lane_id": "-516_2",
+        "lane_pos": 0.0,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "109"
+      },
+      "carla_spawn": {
+        "x": -590.1344883853656,
+        "y": 41.732636039401484,
+        "z": 14.0,
+        "yaw": 136.74064729854783
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20308892662574,
+          "latitude": 31.292453338074278,
+          "sumo_x": 171.14551161463442,
+          "sumo_y": 446.3173639605985,
+          "carla_x": -590.1344883853656,
+          "carla_y": 41.732636039401484
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20257425238047,
+          "latitude": 31.29203739079595,
+          "sumo_x": 122.13976992194398,
+          "sumo_y": 400.2022846903165,
+          "carla_x": -639.140230078056,
+          "carla_y": 87.84771530968351
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-516",
+          "lane_id": "-516_2",
+          "lane_index": 2,
+          "lane_pos": 0.0,
+          "distance_to_lane": 5.288326766735845
+        },
+        {
+          "point_index": 1,
+          "edge_id": "109",
+          "lane_id": "109_0",
+          "lane_index": 0,
+          "lane_pos": 8.97,
+          "distance_to_lane": 7.63478731003279
+        }
+      ],
+      "estimated_duration_seconds": 24.22498622996884
+    },
+    {
+      "actor_id": "105",
+      "name": "从车3",
+      "role": "slave",
+      "sumo_type_id": "vehicle.volkswagen.t2_2021",
+      "vclass": "bus",
+      "route_id": "entity_route_105",
+      "route_edges": [
+        "122",
+        "-111",
+        "-112#0",
+        "-112#1"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "122",
+        "lane_index": 2,
+        "lane_id": "122_2",
+        "lane_pos": 4.038896514379907,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-112#1"
+      },
+      "carla_spawn": {
+        "x": -594.6645240013085,
+        "y": 92.36968347134035,
+        "z": 14.0,
+        "yaw": -130.51732420731693
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20304137810518,
+          "latitude": 31.291996629791957,
+          "sumo_x": 166.61547599869152,
+          "sumo_y": 395.68031652865966,
+          "carla_x": -594.6645240013085,
+          "carla_y": 92.36968347134035
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20257249556427,
+          "latitude": 31.292467722746444,
+          "sumo_x": 121.97540424747933,
+          "sumo_y": 447.91513525511544,
+          "carla_x": -639.3045957525206,
+          "carla_y": 40.13486474488457
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "122",
+          "lane_id": "122_2",
+          "lane_index": 2,
+          "lane_pos": 4.038896514379907,
+          "distance_to_lane": 0.05628036209796668
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-112#1",
+          "lane_id": "-112#1_0",
+          "lane_index": 0,
+          "lane_pos": 1.32,
+          "distance_to_lane": 7.9901110345584545
+        }
+      ],
+      "estimated_duration_seconds": 24.7359882199346
+    },
+    {
+      "actor_id": "107",
+      "name": "从车4",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_107",
+      "route_edges": [
+        "122",
+        "-134"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "122",
+        "lane_index": 1,
+        "lane_id": "122_1",
+        "lane_pos": 3.160551260248349,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-134"
+      },
+      "carla_spawn": {
+        "x": -591.7557734116889,
+        "y": 91.15249325746203,
+        "z": 14.0,
+        "yaw": -83.47901866558666
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20307192763225,
+          "latitude": 31.29200760936373,
+          "sumo_x": 169.52422658831108,
+          "sumo_y": 396.897506742538,
+          "carla_x": -591.7557734116889,
+          "carla_y": 91.15249325746203
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20311666115244,
+          "latitude": 31.29234383999023,
+          "sumo_x": 173.7854799258978,
+          "sumo_y": 434.17667019206124,
+          "carla_x": -587.4945200741022,
+          "carla_y": 53.873329807938774
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "122",
+          "lane_id": "122_1",
+          "lane_index": 1,
+          "lane_pos": 3.160551260248349,
+          "distance_to_lane": 0.0031983393532442348
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-134",
+          "lane_id": "-134_0",
+          "lane_index": 0,
+          "lane_pos": 19.574212430981284,
+          "distance_to_lane": 0.22988375367797104
+        }
+      ],
+      "estimated_duration_seconds": 13.507890370166468
+    },
+    {
+      "actor_id": "112",
+      "name": "从车5",
+      "role": "slave",
+      "sumo_type_id": "vehicle.ford.ambulance",
+      "vclass": "emergency",
+      "route_id": "entity_route_112",
+      "route_edges": [
+        "-516",
+        "-120",
+        "109"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-516",
+        "lane_index": 2,
+        "lane_id": "-516_2",
+        "lane_pos": 0.023547888006572294,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "109"
+      },
+      "carla_spawn": {
+        "x": -594.1160195743782,
+        "y": 45.2489563876332,
+        "z": 14.0,
+        "yaw": 136.82118605628406
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20304711098409,
+          "latitude": 31.2924216216321,
+          "sumo_x": 167.16398042562173,
+          "sumo_y": 442.8010436123668,
+          "carla_x": -594.1160195743782,
+          "carla_y": 45.2489563876332
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20263974330669,
+          "latitude": 31.292093323080383,
+          "sumo_x": 128.37566393017426,
+          "sumo_y": 406.40337104861874,
+          "carla_x": -632.9043360698257,
+          "carla_y": 81.64662895138127
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-516",
+          "lane_id": "-516_2",
+          "lane_index": 2,
+          "lane_pos": 0.023547888006572294,
+          "distance_to_lane": 0.017061454270840222
+        },
+        {
+          "point_index": 1,
+          "edge_id": "109",
+          "lane_id": "109_2",
+          "lane_index": 2,
+          "lane_pos": 4.542118495221912,
+          "distance_to_lane": 0.0976697625335179
+        }
+      ],
+      "estimated_duration_seconds": 19.148900719709825
+    },
+    {
+      "actor_id": "121",
+      "name": "从车6",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_121",
+      "route_edges": [
+        "-122",
+        "-123",
+        "-124"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-122",
+        "lane_index": 2,
+        "lane_id": "-122_2",
+        "lane_pos": 1.0990664740256002,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-124"
+      },
+      "carla_spawn": {
+        "x": -608.31644058448,
+        "y": 85.62573405038842,
+        "z": 14.0,
+        "yaw": 50.710594652422856
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20289798961302,
+          "latitude": 31.292057447813555,
+          "sumo_x": 152.96355941551997,
+          "sumo_y": 402.4242659496116,
+          "carla_x": -608.31644058448,
+          "carla_y": 85.62573405038842
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20311268047345,
+          "latitude": 31.291832141362583,
+          "sumo_x": 173.40329729443852,
+          "sumo_y": 377.442362749849,
+          "carla_x": -587.8767027055615,
+          "carla_y": 110.60763725015101
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-122",
+          "lane_id": "-122_2",
+          "lane_index": 2,
+          "lane_pos": 1.0990664740256002,
+          "distance_to_lane": 0.04243710866807803
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-124",
+          "lane_id": "-124_2",
+          "lane_index": 2,
+          "lane_pos": 8.469942289197197,
+          "distance_to_lane": 0.10605889328156894
+        }
+      ],
+      "estimated_duration_seconds": 11.620130679839205
+    },
+    {
+      "actor_id": "122",
+      "name": "从车7",
+      "role": "slave",
+      "sumo_type_id": "vehicle.volkswagen.t2_2021",
+      "vclass": "bus",
+      "route_id": "entity_route_122",
+      "route_edges": [
+        "-142",
+        "-122"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-142",
+        "lane_index": 2,
+        "lane_id": "-142_2",
+        "lane_pos": 14.802407669494775,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-122"
+      },
+      "carla_spawn": {
+        "x": -635.0543155361268,
+        "y": 55.33261899348298,
+        "z": 14.0,
+        "yaw": 52.47819536799714
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20261714560466,
+          "latitude": 31.292330653394874,
+          "sumo_x": 126.22568446387322,
+          "sumo_y": 432.71738100651703,
+          "carla_x": -635.0543155361268,
+          "carla_y": 55.33261899348298
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20301372043834,
+          "latitude": 31.291887239473954,
+          "sumo_x": 163.98144408761925,
+          "sumo_y": 383.5518695978003,
+          "carla_x": -597.2985559123807,
+          "carla_y": 104.4981304021997
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-142",
+          "lane_id": "-142_2",
+          "lane_index": 2,
+          "lane_pos": 14.802407669494775,
+          "distance_to_lane": 0.1436072026430204
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-122",
+          "lane_id": "-122_0",
+          "lane_index": 0,
+          "lane_pos": 18.85,
+          "distance_to_lane": 4.609927538636805
+        }
+      ],
+      "estimated_duration_seconds": 22.316355854649256
+    },
+    {
+      "actor_id": "123",
+      "name": "从车8",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_123",
+      "route_edges": [
+        "-120",
+        "109",
+        "108#1",
+        "108#0"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-120",
+        "lane_index": 1,
+        "lane_id": "-120_1",
+        "lane_pos": 5.774920758859997,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "108#0"
+      },
+      "carla_spawn": {
+        "x": -600.7841854651452,
+        "y": 47.314386518356116,
+        "z": 14.0,
+        "yaw": 136.1916773422606
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20297707698994,
+          "latitude": 31.292402989671032,
+          "sumo_x": 160.49581453485473,
+          "sumo_y": 440.7356134816439,
+          "carla_x": -600.7841854651452,
+          "carla_y": 47.314386518356116
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.2024507630735,
+          "latitude": 31.29196939380179,
+          "sumo_x": 110.38164211976255,
+          "sumo_y": 392.6638742415191,
+          "carla_x": -650.8983578802374,
+          "carla_y": 95.38612575848089
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-120",
+          "lane_id": "-120_1",
+          "lane_index": 1,
+          "lane_pos": 5.774920758859997,
+          "distance_to_lane": 0.009666701402201553
+        },
+        {
+          "point_index": 1,
+          "edge_id": "108#0",
+          "lane_id": "108#0_0",
+          "lane_index": 0,
+          "lane_pos": 0.92,
+          "distance_to_lane": 7.057172168496927
+        }
+      ],
+      "estimated_duration_seconds": 24.999459630129007
+    },
+    {
+      "actor_id": "125",
+      "name": "从车9",
+      "role": "slave",
+      "sumo_type_id": "vehicle.volkswagen.t2_2021",
+      "vclass": "bus",
+      "route_id": "entity_route_125",
+      "route_edges": [
+        "-120",
+        "-111",
+        "-112#0"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-120",
+        "lane_index": 0,
+        "lane_id": "-120_0",
+        "lane_pos": 14.106797114430504,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-112#0"
+      },
+      "carla_spawn": {
+        "x": -608.7440429797826,
+        "y": 51.0557838480799,
+        "z": 14.0,
+        "yaw": -160.8537090870439
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": false,
+          "speed_kmh": 0.0,
+          "longitude": 121.20289347751086,
+          "latitude": 31.292369241103643,
+          "sumo_x": 152.53595702021732,
+          "sumo_y": 436.9942161519201,
+          "carla_x": -608.7440429797826,
+          "carla_y": 51.0557838480799
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": false,
+          "speed_kmh": 20.0,
+          "longitude": 121.2026371512467,
+          "latitude": 31.29244564768196,
+          "sumo_x": 128.13122383463497,
+          "sumo_y": 445.46720050264486,
+          "carla_x": -633.148776165365,
+          "carla_y": 42.582799497355154
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-120",
+          "lane_id": "-120_0",
+          "lane_index": 0,
+          "lane_pos": 14.106797114430504,
+          "distance_to_lane": 0.09132142832261404
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-112#0",
+          "lane_id": "-112#0_1",
+          "lane_index": 1,
+          "lane_pos": 4.3,
+          "distance_to_lane": 2.687937817790487
+        }
+      ],
+      "estimated_duration_seconds": 9.300148791844949
+    },
+    {
+      "actor_id": "126",
+      "name": "从车10",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_126",
+      "route_edges": [
+        "-142",
+        "109",
+        "108#1",
+        "108#0"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-142",
+        "lane_index": 1,
+        "lane_id": "-142_1",
+        "lane_pos": 2.7812949788433596,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "108#0"
+      },
+      "carla_spawn": {
+        "x": -644.9132634430741,
+        "y": 48.0069894383617,
+        "z": 14.0,
+        "yaw": 93.31199622571903
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20251359320586,
+          "latitude": 31.292396719339433,
+          "sumo_x": 116.36673655692584,
+          "sumo_y": 440.0430105616383,
+          "carla_x": -644.9132634430741,
+          "carla_y": 48.0069894383617
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20248688646313,
+          "latitude": 31.291999991855906,
+          "sumo_x": 113.82123292742972,
+          "sumo_y": 396.056205505291,
+          "carla_x": -647.4587670725703,
+          "carla_y": 91.993794494709
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-142",
+          "lane_id": "-142_1",
+          "lane_index": 1,
+          "lane_pos": 2.7812949788433596,
+          "distance_to_lane": 0.09581306823600615
+        },
+        {
+          "point_index": 1,
+          "edge_id": "108#0",
+          "lane_id": "108#0_0",
+          "lane_index": 0,
+          "lane_pos": 0.92,
+          "distance_to_lane": 3.5188269732624584
+        }
+      ],
+      "estimated_duration_seconds": 15.861743018027907
+    },
+    {
+      "actor_id": "127",
+      "name": "从车11",
+      "role": "slave",
+      "sumo_type_id": "vehicle.ford.ambulance",
+      "vclass": "emergency",
+      "route_id": "entity_route_127",
+      "route_edges": [
+        "-142",
+        "-122",
+        "-123",
+        "-124"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-142",
+        "lane_index": 2,
+        "lane_id": "-142_2",
+        "lane_pos": 21.531757098411763,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-124"
+      },
+      "carla_spawn": {
+        "x": -630.825468428301,
+        "y": 60.53806165755242,
+        "z": 14.0,
+        "yaw": 52.53115273209404
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20266156410263,
+          "latitude": 31.292283706732693,
+          "sumo_x": 130.45453157169902,
+          "sumo_y": 427.5119383424476,
+          "carla_x": -630.825468428301,
+          "carla_y": 60.53806165755242
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20304066167519,
+          "latitude": 31.291859021858944,
+          "sumo_x": 166.5463993163662,
+          "sumo_y": 380.4231102299137,
+          "carla_x": -594.7336006836338,
+          "carla_y": 107.62688977008634
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-142",
+          "lane_id": "-142_2",
+          "lane_index": 2,
+          "lane_pos": 21.531757098411763,
+          "distance_to_lane": 0.0995260160551942
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-124",
+          "lane_id": "-124_1",
+          "lane_index": 1,
+          "lane_pos": 1.8326668680547462,
+          "distance_to_lane": 0.05091837101982076
+        }
+      ],
+      "estimated_duration_seconds": 21.358592937743268
+    },
+    {
+      "actor_id": "129",
+      "name": "从车12",
+      "role": "slave",
+      "sumo_type_id": "vehicle.ford.ambulance",
+      "vclass": "emergency",
+      "route_id": "entity_route_129",
+      "route_edges": [
+        "-134",
+        "-136"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-134",
+        "lane_index": 0,
+        "lane_id": "-134_0",
+        "lane_pos": 1.9120479465935607,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-136"
+      },
+      "carla_spawn": {
+        "x": -600.5104519264174,
+        "y": 65.966387322799,
+        "z": 14.0,
+        "yaw": -44.39358008689487
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20297996319253,
+          "latitude": 31.292234763571326,
+          "sumo_x": 160.76954807358254,
+          "sumo_y": 422.083612677201,
+          "carla_x": -600.5104519264174,
+          "carla_y": 65.966387322799
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20330952548292,
+          "latitude": 31.292511872406624,
+          "sumo_x": 192.14942352812886,
+          "sumo_y": 452.80616994033625,
+          "carla_x": -569.1305764718711,
+          "carla_y": 35.243830059663765
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-134",
+          "lane_id": "-134_0",
+          "lane_index": 0,
+          "lane_pos": 1.9120479465935607,
+          "distance_to_lane": 0.2746703904625913
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-136",
+          "lane_id": "-136_0",
+          "lane_index": 0,
+          "lane_pos": 1.4466789547829955,
+          "distance_to_lane": 0.006310905412616817
+        }
+      ],
+      "estimated_duration_seconds": 15.809583967944835
+    },
+    {
+      "actor_id": "130",
+      "name": "从车13",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_130",
+      "route_edges": [
+        "124",
+        "123",
+        "122",
+        "-111",
+        "-112#0",
+        "-112#1"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "124",
+        "lane_index": 0,
+        "lane_id": "124_0",
+        "lane_pos": 4.731502388475521,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-112#1"
+      },
+      "carla_spawn": {
+        "x": -585.513730881184,
+        "y": 103.83136590845373,
+        "z": 14.0,
+        "yaw": -130.21684884696327
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20313749446336,
+          "latitude": 31.291893259145787,
+          "sumo_x": 175.766269118816,
+          "sumo_y": 384.2186340915463,
+          "carla_x": -585.513730881184,
+          "carla_y": 103.83136590845373
+        },
+        {
+          "frame_id": 1,
+          "point_type": "pathway",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20262436459552,
+          "latitude": 31.29241431716012,
+          "sumo_x": 126.91357697766273,
+          "sumo_y": 441.99351788623886,
+          "carla_x": -634.3664230223372,
+          "carla_y": 46.05648211376115
+        },
+        {
+          "frame_id": 2,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20254500340121,
+          "latitude": 31.292492715082425,
+          "sumo_x": 119.35800240968831,
+          "sumo_y": 450.6863077988215,
+          "carla_x": -641.9219975903117,
+          "carla_y": 37.36369220117854
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "124",
+          "lane_id": "124_0",
+          "lane_index": 0,
+          "lane_pos": 4.731502388475521,
+          "distance_to_lane": 0.23325557245999115
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-112#0",
+          "lane_id": "-112#0_3",
+          "lane_index": 3,
+          "lane_pos": 2.9881685916523932,
+          "distance_to_lane": 0.05169532731155257
+        },
+        {
+          "point_index": 2,
+          "edge_id": "-112#1",
+          "lane_id": "-112#1_0",
+          "lane_index": 0,
+          "lane_pos": 1.32,
+          "distance_to_lane": 9.906383986719426
+        }
+      ],
+      "estimated_duration_seconds": 29.310945537083956
+    },
+    {
+      "actor_id": "131",
+      "name": "从车14",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_131",
+      "route_edges": [
+        "124",
+        "123",
+        "122",
+        "-111",
+        "-112#0",
+        "-112#1"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "124",
+        "lane_index": 1,
+        "lane_id": "124_1",
+        "lane_pos": 0.0,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-112#1"
+      },
+      "carla_spawn": {
+        "x": -581.9787696070277,
+        "y": 112.43933246431902,
+        "z": 14.0,
+        "yaw": -128.15822335414643
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.20317462669306,
+          "latitude": 31.291815623886986,
+          "sumo_x": 179.30123039297223,
+          "sumo_y": 375.610667535681,
+          "carla_x": -581.9787696070277,
+          "carla_y": 112.43933246431902
+        },
+        {
+          "frame_id": 1,
+          "point_type": "pathway",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20266919529543,
+          "latitude": 31.292367943010603,
+          "sumo_x": 131.18167092238014,
+          "sumo_y": 436.8515501335751,
+          "carla_x": -630.0983290776198,
+          "carla_y": 51.19844986642494
+        },
+        {
+          "frame_id": 2,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20255993664145,
+          "latitude": 31.292479139703364,
+          "sumo_x": 120.77972705397553,
+          "sumo_y": 449.18105755682984,
+          "carla_x": -640.5002729460244,
+          "carla_y": 38.86894244317017
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "124",
+          "lane_id": "124_1",
+          "lane_index": 1,
+          "lane_pos": 0.0,
+          "distance_to_lane": 4.173075915438951
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-111",
+          "lane_id": "-111_0",
+          "lane_index": 0,
+          "lane_pos": 4.98,
+          "distance_to_lane": 7.110568657327136
+        },
+        {
+          "point_index": 2,
+          "edge_id": "-112#1",
+          "lane_id": "-112#1_0",
+          "lane_index": 0,
+          "lane_pos": 1.32,
+          "distance_to_lane": 8.71222187887308
+        }
+      ],
+      "estimated_duration_seconds": 30.94191159150081
+    },
+    {
+      "actor_id": "133",
+      "name": "从车15",
+      "role": "slave",
+      "sumo_type_id": "vehicle.dodge.charger_2020",
+      "vclass": "passenger",
+      "route_id": "entity_route_133",
+      "route_edges": [
+        "-107",
+        "-108#0",
+        "-108#1",
+        "-109",
+        "-134"
+      ],
+      "depart": {
+        "time_seconds": 0.0,
+        "edge_id": "-107",
+        "lane_index": 0,
+        "lane_id": "-107_0",
+        "lane_pos": 7.816564336459308,
+        "speed_kmh": 0.0
+      },
+      "arrival": {
+        "edge_id": "-134"
+      },
+      "carla_spawn": {
+        "x": -645.2637435384709,
+        "y": 104.37235802739417,
+        "z": 14.0,
+        "yaw": -43.22214864439037
+      },
+      "reference_points": [
+        {
+          "frame_id": 0,
+          "point_type": "start",
+          "pass": true,
+          "speed_kmh": 0.0,
+          "longitude": 121.2025099485117,
+          "latitude": 31.291888348251142,
+          "sumo_x": 116.01625646152911,
+          "sumo_y": 383.67764197260584,
+          "carla_x": -645.2637435384709,
+          "carla_y": 104.37235802739417
+        },
+        {
+          "frame_id": 1,
+          "point_type": "end",
+          "pass": true,
+          "speed_kmh": 20.0,
+          "longitude": 121.20307574688493,
+          "latitude": 31.292345019199455,
+          "sumo_x": 169.8899717529573,
+          "sumo_y": 434.30763305315315,
+          "carla_x": -591.3900282470427,
+          "carla_y": 53.74236694684686
+        }
+      ],
+      "matched_points": [
+        {
+          "point_index": 0,
+          "edge_id": "-107",
+          "lane_id": "-107_0",
+          "lane_index": 0,
+          "lane_pos": 7.816564336459308,
+          "distance_to_lane": 0.07927073294213444
+        },
+        {
+          "point_index": 1,
+          "edge_id": "-134",
+          "lane_id": "-134_1",
+          "lane_index": 1,
+          "lane_pos": 16.98620304793675,
+          "distance_to_lane": 0.02986159418684871
+        }
+      ],
+      "estimated_duration_seconds": 26.61511236528815
+    }
+  ],
+  "scenario_duration_seconds": 30.94191159150081,
+  "weather": {
+    "cloudiness": 0.0,
+    "precipitation": 0.0,
+    "precipitation_deposits": 0.0,
+    "wind_intensity": 0.0,
+    "sun_azimuth_angle": 270.0,
+    "sun_altitude_angle": 13.0,
+    "fog_density": 0.0,
+    "fog_distance": 0.0,
+    "wetness": 0.0,
+    "fog_falloff": 0.0,
+    "scattering_intensity": 0.0,
+    "mie_scattering_scale": 0.0,
+    "rayleigh_scattering_scale": 0.0331
+  },
+  "random_seed": 7,
+  "conversion_warnings": []
+}

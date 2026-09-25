@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration>
+  <input>
+    <net-file value="/home/xck/Project/Benchmark/Bench4LMAD_L4_Carla_Single_Run/Carla_Simulation/Co-Simulation/Sumo/tongji/tongji.net.xml"/>
+    <route-files value="/home/xck/Project/Benchmark/Bench4LMAD_L4_Carla_Single_Run/Carla_Simulation/Co-Simulation/Sumo/tongji/carlavtypes13.rou.xml"/>
+  </input>
+  <gui_only>
+    <gui-settings-file value="/home/xck/Project/Benchmark/Bench4LMAD_L4_Carla_Single_Run/Carla_Simulation/Co-Simulation/Sumo/tongji/viewsettings.xml"/>
+  </gui_only>
+  <num-clients value="1"/>
+</configuration>

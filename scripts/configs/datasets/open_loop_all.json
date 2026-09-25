@@ -1,0 +1,76 @@
+{
+  "name": "open_loop_all",
+  "root": "../../../Open_Loop_Evaluation",
+  "datasets": [
+    {
+      "name": "R1_1_A_Existence",
+      "path": "R1_1_A_Existence.jsonl",
+      "task": "yes_no"
+    },
+    {
+      "name": "R1_1_B_Counting",
+      "path": "R1_1_B_Counting.jsonl",
+      "task": "numeric"
+    },
+    {
+      "name": "R1_1_C_State_Attribute",
+      "path": "R1_1_C_State_Attribute.jsonl",
+      "task": "multi_choice"
+    },
+    {
+      "name": "R1_2_A_Nearest_Object",
+      "path": "R1_2_A_Nearest_Object.jsonl",
+      "task": "numeric"
+    },
+    {
+      "name": "R1_2_B_Certain_Object",
+      "path": "R1_2_B_Certain_Object.jsonl",
+      "task": "numeric"
+    },
+    {
+      "name": "R1_2_C_Distance_Bucket",
+      "path": "R1_2_C_Distance_Bucket.jsonl",
+      "task": "numeric"
+    },
+    {
+      "name": "R1_3_Location_Questions",
+      "path": "R1_3_Location_Questions.jsonl",
+      "task": "bbox"
+    },
+    {
+      "name": "R1_4_Situation_Description",
+      "path": "R1_4_Situation_Description.jsonl",
+      "task": "text"
+    },
+    {
+      "name": "R2_1_Multi_view_Memory",
+      "path": "R2_1_Multi_view_Memory.jsonl",
+      "task": "numeric"
+    },
+    {
+      "name": "R2_2_A_Temporal_Counting",
+      "path": "R2_2_A_Temporal_Counting.jsonl",
+      "task": "numeric"
+    },
+    {
+      "name": "R2_2_B_Temporal_Status_Recognition",
+      "path": "R2_2_B_Temporal_Status_Recognition.jsonl",
+      "task": "multi_choice"
+    },
+    {
+      "name": "R2_3_Spatial_Relations",
+      "path": "R2_3_Spatial_Relations.jsonl",
+      "task": "multi_choice"
+    },
+    {
+      "name": "R3_1_Outcome_Prediction",
+      "path": "R3_1_Outcome_Prediction.jsonl",
+      "task": "multi_choice"
+    },
+    {
+      "name": "R3_2_Sequential_Planning",
+      "path": "R3_2_Sequential_Planning.jsonl",
+      "task": "sequence_order"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1df0537b-0236-4afa-9ac2-90f753e7f7ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/001.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/002.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/carla_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/ceshi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/generate_traffic_webGL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/new_sky_level.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/park_to_walker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/vehicle_avoiding_obstacles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/vehicle_collision.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/vehicle_collision2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/vehicle_collision_180.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/vehicle_collision_opposite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/walker_and_bicycle_and_vehicle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/walker_and_vehicle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/walker_ghost_probe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PythonAPI/work/yexiaofei.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vtypes.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/vtypes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_synchronization.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_synchronization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spawn_npc_sumo.py" beforeDir="false" afterPath="$PROJECT_DIR$/spawn_npc_sumo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_integration/bridge_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_integration/bridge_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_integration/carla_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_integration/carla_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_integration/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_integration/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_integration/sumo_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_integration/sumo_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/create_sumo_vtypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_sumo_vtypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PythonAPI/carla/agents/navigation/global_route_planner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PythonAPI/carla/agents/navigation/global_route_planner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PythonAPI/examples/manual_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PythonAPI/examples/manual_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unreal/CarlaUE4/CarlaUE4.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unreal/CarlaUE4/CarlaUE4.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unreal/CarlaUE4/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unreal/CarlaUE4/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unreal/CarlaUE4/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unreal/CarlaUE4/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Update.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Util/BuildTools/BuildCarlaUE4.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Util/BuildTools/BuildCarlaUE4.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Util/BuildTools/BuildLibCarla.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Util/BuildTools/BuildLibCarla.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Util/BuildTools/BuildOSM2ODR.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Util/BuildTools/BuildOSM2ODR.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Util/BuildTools/Setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Util/BuildTools/Setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Util/DockerUtils/dist/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Util/DockerUtils/dist/build.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Z41qu00KMDGMigD3Yr5KNX5Nnw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/gj/Carla_0.9.13/PythonAPI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1df0537b-0236-4afa-9ac2-90f753e7f7ed" name="Changes" comment="" />
+      <created>1701666732288</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701666732288</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

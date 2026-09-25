@@ -1,0 +1,1432 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- generated on 2023-12-04 11:06:16 by Eclipse SUMO duarouter Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="tongji.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="tongji.rou.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="50"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0" depart="0.00" type="vehicle.audi.a2">
+        <route edges="-86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 -11"/>
+    </vehicle>
+    <vehicle id="1" depart="0.10" type="vehicle.audi.tt">
+        <route edges="-238 -349 -345 -339 -336 -332 -327 -324 228 -228 -220 -219 -218 -217 -216"/>
+    </vehicle>
+    <vehicle id="2" depart="0.20" type="vehicle.bmw.grandtourer">
+        <route edges="201 -279 -280 280 279 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123"/>
+    </vehicle>
+    <vehicle id="3" depart="0.30" type="vehicle.chevrolet.impala">
+        <route edges="45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134 -136 -138#0 -138#1"/>
+    </vehicle>
+    <vehicle id="4" depart="0.40" type="vehicle.citroen.c3">
+        <route edges="-327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -111"/>
+    </vehicle>
+    <vehicle id="5" depart="0.50" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0 -2#1 -3 -4#0 -4#1"/>
+    </vehicle>
+    <vehicle id="6" depart="0.60" type="vehicle.lincoln.mkz_2017">
+        <route edges="-111 -112#0 -112#1 -113 -114#0 -114#1 -116 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209"/>
+    </vehicle>
+    <vehicle id="7" depart="0.70" type="vehicle.mercedes.coupe">
+        <route edges="-91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51"/>
+    </vehicle>
+    <vehicle id="8" depart="0.80" type="vehicle.mini.cooper_s">
+        <route edges="-214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71"/>
+    </vehicle>
+    <vehicle id="9" depart="0.90" type="vehicle.ford.mustang">
+        <route edges="3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 91 94 96 -100 -102"/>
+    </vehicle>
+    <vehicle id="10" depart="1.00" type="vehicle.nissan.micra">
+        <route edges="299 -332 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162 161 159"/>
+    </vehicle>
+    <vehicle id="11" depart="1.10" type="vehicle.nissan.patrol">
+        <route edges="-275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 91 94 96 -100 -191"/>
+    </vehicle>
+    <vehicle id="12" depart="1.20" type="vehicle.seat.leon">
+        <route edges="78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 -279 -280"/>
+    </vehicle>
+    <vehicle id="13" depart="1.30" type="vehicle.volkswagen.t2">
+        <route edges="-142 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -147 -145"/>
+    </vehicle>
+    <vehicle id="14" depart="1.40" type="vehicle.dodge.charger_police">
+        <route edges="332 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78"/>
+    </vehicle>
+    <vehicle id="15" depart="1.50" type="vehicle.micro.microlino">
+        <route edges="299 -332 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -185 168 64 63 62 200 201"/>
+    </vehicle>
+    <vehicle id="16" depart="1.60" type="vehicle.toyota.prius">
+        <route edges="-414 219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82"/>
+    </vehicle>
+    <vehicle id="17" depart="1.70" type="vehicle.tesla.cybertruck">
+        <route edges="-299 304 317 327 332 336 -341 -342 238 240 -240 -238 -237 -236 -56"/>
+    </vehicle>
+    <vehicle id="18" depart="1.80" type="vehicle.tesla.model3">
+        <route edges="31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81"/>
+    </vehicle>
+    <vehicle id="19" depart="1.90" type="vehicle.audi.etron">
+        <route edges="37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 168 -66 -67"/>
+    </vehicle>
+    <vehicle id="20" depart="2.00" type="vehicle.carlamotors.carlacola">
+        <route edges="161 -152 124 123 122 -111 -112#0 -112#1 -113 -114#0 -114#1 -116"/>
+    </vehicle>
+    <vehicle id="21" depart="2.10" type="vehicle.yamaha.yzf">
+        <route edges="-216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -258 -259"/>
+    </vehicle>
+    <vehicle id="22" depart="2.20" type="vehicle.harley-davidson.low_rider">
+        <route edges="-136 128 127 126 152 159 165 166 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219"/>
+    </vehicle>
+    <vehicle id="23" depart="2.30" type="vehicle.kawasaki.ninja">
+        <route edges="-152 124 123 122 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256"/>
+    </vehicle>
+    <vehicle id="24" depart="2.40" type="vehicle.gazelle.omafiets">
+        <route edges="-84#1 -85 -86 -87 25 -45 -47 -49 53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -295"/>
+    </vehicle>
+    <vehicle id="25" depart="2.50" type="vehicle.diamondback.century">
+        <route edges="-293 128 127 126 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1"/>
+    </vehicle>
+    <vehicle id="26" depart="2.60" type="vehicle.bh.crossbike">
+        <route edges="-236 -56 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8 7"/>
+    </vehicle>
+    <vehicle id="27" depart="2.70" type="vehicle.mercedes.coupe_2020">
+        <route edges="-9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79"/>
+    </vehicle>
+    <vehicle id="28" depart="2.80" type="vehicle.dodge.charger_2020">
+        <route edges="-2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201"/>
+    </vehicle>
+    <vehicle id="29" depart="2.90" type="vehicle.ford.ambulance">
+        <route edges="-195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -317 -304"/>
+    </vehicle>
+    <vehicle id="30" depart="3.00" type="vehicle.lincoln.mkz_2020">
+        <route edges="9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87"/>
+    </vehicle>
+    <vehicle id="31" depart="3.10" type="vehicle.mini.cooper_s_2021">
+        <route edges="-56 -58 -60 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -134 -136 128 127"/>
+    </vehicle>
+    <vehicle id="32" depart="3.20" type="vehicle.ford.crown">
+        <route edges="327 332 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -279 -280 280 279 203 215 -411 -412 -413 -414 219"/>
+    </vehicle>
+    <vehicle id="33" depart="3.30" type="vehicle.vespa.zx125">
+        <route edges="-216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -111 -112#0"/>
+    </vehicle>
+    <vehicle id="35" depart="3.50" type="vehicle.nissan.patrol_2021">
+        <route edges="-211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -96 -94 -91 72 71"/>
+    </vehicle>
+    <vehicle id="36" depart="3.60" type="vehicle.dodge.charger_police_2020">
+        <route edges="4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27"/>
+    </vehicle>
+    <vehicle id="37" depart="3.70" type="vehicle.mercedes.sprinter">
+        <route edges="-96 -94 -91 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -317"/>
+    </vehicle>
+    <vehicle id="38" depart="3.80" type="vehicle.volkswagen.t2_2021">
+        <route edges="60 58 -53 -51 51 53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147 -371"/>
+    </vehicle>
+    <vehicle id="39" depart="3.90" type="vehicle.carlamotors.firetruck">
+        <route edges="-232#1 -230 58 56 -351 -339 -336 -332 -327 -324 228 -228 -220 -221 -222 -223"/>
+    </vehicle>
+    <vehicle id="40" depart="4.00" type="vehicle.audi.a2">
+        <route edges="-58 -60 -62 -63 -64 -66 -67 -68 -183 -185 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238"/>
+    </vehicle>
+    <vehicle id="41" depart="4.10" type="vehicle.audi.tt">
+        <route edges="-68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47"/>
+    </vehicle>
+    <vehicle id="42" depart="4.20" type="vehicle.bmw.grandtourer">
+        <route edges="-309 306 299 -332 -327 -324 228 -228 -220 -221 -222 -223 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1"/>
+    </vehicle>
+    <vehicle id="43" depart="4.30" type="vehicle.chevrolet.impala">
+        <route edges="96 -100 -102 -104 -98 -96 -94 -91 -74 -75 -76 -147 -145 -406 -403"/>
+    </vehicle>
+    <vehicle id="44" depart="4.40" type="vehicle.citroen.c3">
+        <route edges="-139 79 78 -147 -145 -142 -134 -132 -120 -111 -112#0 -112#1 -113 -114#0 -114#1 -116"/>
+    </vehicle>
+    <vehicle id="45" depart="4.50" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-159 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0"/>
+    </vehicle>
+    <vehicle id="46" depart="4.60" type="vehicle.lincoln.mkz_2017">
+        <route edges="238 240 -240 -238 -349 -345 -339"/>
+    </vehicle>
+    <vehicle id="47" depart="4.70" type="vehicle.mercedes.coupe">
+        <route edges="-127 -128 -130 -516 -120 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 -306"/>
+    </vehicle>
+    <vehicle id="48" depart="4.80" type="vehicle.mini.cooper_s">
+        <route edges="94 96 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414"/>
+    </vehicle>
+    <vehicle id="49" depart="4.90" type="vehicle.ford.mustang">
+        <route edges="81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36"/>
+    </vehicle>
+    <vehicle id="50" depart="5.00" type="vehicle.nissan.micra">
+        <route edges="-104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0"/>
+    </vehicle>
+    <vehicle id="51" depart="5.10" type="vehicle.nissan.patrol">
+        <route edges="122 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47"/>
+    </vehicle>
+    <vehicle id="52" depart="5.20" type="vehicle.seat.leon">
+        <route edges="-236 -56 -53 49 47 45 -25 -23 -19 -18 -6 -7 -8 -9"/>
+    </vehicle>
+    <vehicle id="53" depart="5.30" type="vehicle.volkswagen.t2">
+        <route edges="-161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345 -347"/>
+    </vehicle>
+    <vehicle id="54" depart="5.40" type="vehicle.dodge.charger_police">
+        <route edges="-35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75"/>
+    </vehicle>
+    <vehicle id="55" depart="5.50" type="vehicle.micro.microlino">
+        <route edges="4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238"/>
+    </vehicle>
+    <vehicle id="56" depart="5.60" type="vehicle.toyota.prius">
+        <route edges="-391 -388 -195 68 67 66 64 63 62 200 201 -279 -280 280 279 -201"/>
+    </vehicle>
+    <vehicle id="57" depart="5.70" type="vehicle.tesla.cybertruck">
+        <route edges="6 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -30 -31 -32 -33 -35 -36 -37 -39 39"/>
+    </vehicle>
+    <vehicle id="58" depart="5.80" type="vehicle.tesla.model3">
+        <route edges="-257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87"/>
+    </vehicle>
+    <vehicle id="59" depart="5.90" type="vehicle.audi.etron">
+        <route edges="-78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 -58 -60 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191"/>
+    </vehicle>
+    <vehicle id="60" depart="6.00" type="vehicle.carlamotors.carlacola">
+        <route edges="211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47"/>
+    </vehicle>
+    <vehicle id="61" depart="6.10" type="vehicle.yamaha.yzf">
+        <route edges="219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -279 -280 280 279 203 215 -411 -412 -413 -414"/>
+    </vehicle>
+    <vehicle id="62" depart="6.20" type="vehicle.harley-davidson.low_rider">
+        <route edges="-1 -2#0 -2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275"/>
+    </vehicle>
+    <vehicle id="63" depart="6.30" type="vehicle.kawasaki.ninja">
+        <route edges="-108#1 -109 -111 -112#0 -112#1 -113 -114#0 -114#1 -116 76 75 74 72 71 70 68 67 66"/>
+    </vehicle>
+    <vehicle id="65" depart="6.50" type="vehicle.gazelle.omafiets">
+        <route edges="-260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123"/>
+    </vehicle>
+    <vehicle id="67" depart="6.70" type="vehicle.diamondback.century">
+        <route edges="-138#1 -139 79 78 76 75 74 91 94 96 -100 -191 -382 -386"/>
+    </vehicle>
+    <vehicle id="68" depart="6.80" type="vehicle.bh.crossbike">
+        <route edges="-13 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212"/>
+    </vehicle>
+    <vehicle id="69" depart="6.90" type="vehicle.mercedes.coupe_2020">
+        <route edges="212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179"/>
+    </vehicle>
+    <vehicle id="70" depart="7.00" type="vehicle.dodge.charger_2020">
+        <route edges="-376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53"/>
+    </vehicle>
+    <vehicle id="72" depart="7.20" type="vehicle.ford.ambulance">
+        <route edges="-33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212"/>
+    </vehicle>
+    <vehicle id="73" depart="7.30" type="vehicle.lincoln.mkz_2020">
+        <route edges="-42 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201"/>
+    </vehicle>
+    <vehicle id="74" depart="7.40" type="vehicle.mini.cooper_s_2021">
+        <route edges="-209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8 -267 -268"/>
+    </vehicle>
+    <vehicle id="75" depart="7.50" type="vehicle.ford.crown">
+        <route edges="94 96 -100 -102 -104 -98 -96"/>
+    </vehicle>
+    <vehicle id="76" depart="7.60" type="vehicle.vespa.zx125">
+        <route edges="-342 238 240 -240 -238 -349 -345 -347 -348 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -406"/>
+    </vehicle>
+    <vehicle id="77" depart="7.70" type="vehicle.nissan.patrol_2021">
+        <route edges="-165 -159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219 -218 -217 -216"/>
+    </vehicle>
+    <vehicle id="78" depart="7.80" type="vehicle.dodge.charger_police_2020">
+        <route edges="-274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 91 94 96 -100 -191 -193#0 -193#1 -195 -70"/>
+    </vehicle>
+    <vehicle id="79" depart="7.90" type="vehicle.mercedes.sprinter">
+        <route edges="-217 -216 -215"/>
+    </vehicle>
+    <vehicle id="80" depart="8.00" type="vehicle.volkswagen.t2_2021">
+        <route edges="-130 -516 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85"/>
+    </vehicle>
+    <vehicle id="81" depart="8.10" type="vehicle.carlamotors.firetruck">
+        <route edges="-216 -215 -203 -201 -200 60 58 -53 -51 51 53"/>
+    </vehicle>
+    <vehicle id="82" depart="8.20" type="vehicle.audi.a2">
+        <route edges="37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 -126 -127 -128 -130"/>
+    </vehicle>
+    <vehicle id="83" depart="8.30" type="vehicle.audi.tt">
+        <route edges="-219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 109"/>
+    </vehicle>
+    <vehicle id="84" depart="8.40" type="vehicle.bmw.grandtourer">
+        <route edges="-213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -18"/>
+    </vehicle>
+    <vehicle id="85" depart="8.50" type="vehicle.chevrolet.impala">
+        <route edges="68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 -62 -63 -64"/>
+    </vehicle>
+    <vehicle id="86" depart="8.60" type="vehicle.citroen.c3">
+        <route edges="-375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 223 222"/>
+    </vehicle>
+    <vehicle id="87" depart="8.70" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -221 -222 -223 -206 -205#0 -205#1"/>
+    </vehicle>
+    <vehicle id="88" depart="8.80" type="vehicle.lincoln.mkz_2017">
+        <route edges="-145 -142 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345"/>
+    </vehicle>
+    <vehicle id="89" depart="8.90" type="vehicle.mercedes.coupe">
+        <route edges="-33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377"/>
+    </vehicle>
+    <vehicle id="90" depart="9.00" type="vehicle.mini.cooper_s">
+        <route edges="2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134 -136 128 127 126 -155 123 122"/>
+    </vehicle>
+    <vehicle id="91" depart="9.10" type="vehicle.ford.mustang">
+        <route edges="84#1 84#0 83 82 81 80 79 78 -147"/>
+    </vehicle>
+    <vehicle id="93" depart="9.30" type="vehicle.nissan.micra">
+        <route edges="37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23"/>
+    </vehicle>
+    <vehicle id="94" depart="9.40" type="vehicle.nissan.patrol">
+        <route edges="-205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36"/>
+    </vehicle>
+    <vehicle id="95" depart="9.50" type="vehicle.seat.leon">
+        <route edges="-327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256"/>
+    </vehicle>
+    <vehicle id="96" depart="9.60" type="vehicle.volkswagen.t2">
+        <route edges="-223 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -185 168 64 63"/>
+    </vehicle>
+    <vehicle id="97" depart="9.70" type="vehicle.dodge.charger_police">
+        <route edges="-345 -347 -348 39 37 36"/>
+    </vehicle>
+    <vehicle id="98" depart="9.80" type="vehicle.micro.microlino">
+        <route edges="-49 53 -58 -60 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -134 -132 -120"/>
+    </vehicle>
+    <vehicle id="99" depart="9.90" type="vehicle.toyota.prius">
+        <route edges="96 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304 317"/>
+    </vehicle>
+    <vehicle id="100" depart="10.00" type="vehicle.tesla.cybertruck">
+        <route edges="80 79 78 76 75 74 72 71 70 68 67 66 64"/>
+    </vehicle>
+    <vehicle id="101" depart="10.10" type="vehicle.tesla.model3">
+        <route edges="332 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0"/>
+    </vehicle>
+    <vehicle id="102" depart="10.20" type="vehicle.audi.etron">
+        <route edges="-380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0"/>
+    </vehicle>
+    <vehicle id="103" depart="10.30" type="vehicle.carlamotors.carlacola">
+        <route edges="-31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124"/>
+    </vehicle>
+    <vehicle id="104" depart="10.40" type="vehicle.yamaha.yzf">
+        <route edges="-299 304 317 327 332 336 -341 -342 238 240 -240 -238 -349 -345 -347 -348 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85"/>
+    </vehicle>
+    <vehicle id="105" depart="10.50" type="vehicle.harley-davidson.low_rider">
+        <route edges="-232#1 -230 58 56 -351 -339 -336 -299 -301 -209 -208 223 222"/>
+    </vehicle>
+    <vehicle id="106" depart="10.60" type="vehicle.kawasaki.ninja">
+        <route edges="-35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 56 -351 -339"/>
+    </vehicle>
+    <vehicle id="107" depart="10.70" type="vehicle.gazelle.omafiets">
+        <route edges="78 76 75 74 91 94"/>
+    </vehicle>
+    <vehicle id="108" depart="10.80" type="vehicle.diamondback.century">
+        <route edges="-53 -51 51 53 -58 -60 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162 161 159 165 166 185"/>
+    </vehicle>
+    <vehicle id="109" depart="10.90" type="vehicle.bh.crossbike">
+        <route edges="-191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2"/>
+    </vehicle>
+    <vehicle id="110" depart="11.00" type="vehicle.mercedes.coupe_2020">
+        <route edges="80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 168 -66 -67"/>
+    </vehicle>
+    <vehicle id="111" depart="11.10" type="vehicle.dodge.charger_2020">
+        <route edges="-45 -47 -49 53 56 -351 -339 -336 -332 -327 -324 228 -228 -220 -221 -222 -223 208"/>
+    </vehicle>
+    <vehicle id="112" depart="11.20" type="vehicle.ford.ambulance">
+        <route edges="-124 152 159 165 166 168 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -18 -6 -7"/>
+    </vehicle>
+    <vehicle id="113" depart="11.30" type="vehicle.lincoln.mkz_2020">
+        <route edges="-396 -94 -91 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304 317 327 332"/>
+    </vehicle>
+    <vehicle id="114" depart="11.40" type="vehicle.mini.cooper_s_2021">
+        <route edges="-193#0 -193#1 -195 -70 -71 -72 -74 -75 -76 -147 -145 -142 -134 -136 -138#0 -138#1 -139 79"/>
+    </vehicle>
+    <vehicle id="115" depart="11.50" type="vehicle.ford.crown">
+        <route edges="-136 128 127 126 152 159 165 166 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -221 -222 -223 -206 -205#0 -205#1 -204"/>
+    </vehicle>
+    <vehicle id="116" depart="11.60" type="vehicle.vespa.zx125">
+        <route edges="-71 -72 91 94 96 -100 -102 163 162 161 -152 124 123"/>
+    </vehicle>
+    <vehicle id="117" depart="11.70" type="vehicle.nissan.patrol_2021">
+        <route edges="-218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165"/>
+    </vehicle>
+    <vehicle id="118" depart="11.80" type="vehicle.dodge.charger_police_2020">
+        <route edges="45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -221 -222 -223"/>
+    </vehicle>
+    <vehicle id="119" depart="11.90" type="vehicle.mercedes.sprinter">
+        <route edges="-71 -72 -74 -75 -76 -78 -79 -80 -81 -82"/>
+    </vehicle>
+    <vehicle id="120" depart="12.00" type="vehicle.volkswagen.t2_2021">
+        <route edges="-327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -18 -6 -7"/>
+    </vehicle>
+    <vehicle id="121" depart="12.10" type="vehicle.carlamotors.firetruck">
+        <route edges="-404 -399 -396 -94 -91 72 71 70 68"/>
+    </vehicle>
+    <vehicle id="122" depart="12.20" type="vehicle.audi.a2">
+        <route edges="-21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 168"/>
+    </vehicle>
+    <vehicle id="123" depart="12.30" type="vehicle.audi.tt">
+        <route edges="-220 -221 -222 -223 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -317"/>
+    </vehicle>
+    <vehicle id="124" depart="12.40" type="vehicle.bmw.grandtourer">
+        <route edges="108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261"/>
+    </vehicle>
+    <vehicle id="125" depart="12.50" type="vehicle.chevrolet.impala">
+        <route edges="-261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209"/>
+    </vehicle>
+    <vehicle id="126" depart="12.60" type="vehicle.citroen.c3">
+        <route edges="-130 -516 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -147 -371"/>
+    </vehicle>
+    <vehicle id="127" depart="12.70" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="96 -100 -191 -193#0 -193#1 -195 -70 -71 -72 91 94"/>
+    </vehicle>
+    <vehicle id="128" depart="12.80" type="vehicle.lincoln.mkz_2017">
+        <route edges="-130 -516 -120 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212"/>
+    </vehicle>
+    <vehicle id="129" depart="12.90" type="vehicle.mercedes.coupe">
+        <route edges="-232#1 -230 -60 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68"/>
+    </vehicle>
+    <vehicle id="131" depart="13.10" type="vehicle.mini.cooper_s">
+        <route edges="-292 -293 -130 -516 -120 109 108#1 108#0 107 -98 -100 -191 -193#0"/>
+    </vehicle>
+    <vehicle id="132" depart="13.20" type="vehicle.ford.mustang">
+        <route edges="317 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162"/>
+    </vehicle>
+    <vehicle id="133" depart="13.30" type="vehicle.nissan.micra">
+        <route edges="-79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85"/>
+    </vehicle>
+    <vehicle id="134" depart="13.40" type="vehicle.nissan.patrol">
+        <route edges="-94 -91 72 71 70 -183 -181 -180#0 -180#1 -179 -102"/>
+    </vehicle>
+    <vehicle id="135" depart="13.50" type="vehicle.seat.leon">
+        <route edges="304 317 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261"/>
+    </vehicle>
+    <vehicle id="136" depart="13.60" type="vehicle.volkswagen.t2">
+        <route edges="1 9 8 7"/>
+    </vehicle>
+    <vehicle id="137" depart="13.70" type="vehicle.dodge.charger_police">
+        <route edges="-18 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 -161 -162"/>
+    </vehicle>
+    <vehicle id="138" depart="13.80" type="vehicle.micro.microlino">
+        <route edges="-159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -237 -236 -56"/>
+    </vehicle>
+    <vehicle id="139" depart="13.90" type="vehicle.toyota.prius">
+        <route edges="-238 -237 -236 -56 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78"/>
+    </vehicle>
+    <vehicle id="140" depart="14.00" type="vehicle.tesla.cybertruck">
+        <route edges="166 168 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21"/>
+    </vehicle>
+    <vehicle id="141" depart="14.10" type="vehicle.tesla.model3">
+        <route edges="-84#1 -85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -341 -342 238 240 -240 -238"/>
+    </vehicle>
+    <vehicle id="142" depart="14.20" type="vehicle.audi.etron">
+        <route edges="-380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53"/>
+    </vehicle>
+    <vehicle id="143" depart="14.30" type="vehicle.carlamotors.carlacola">
+        <route edges="33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142"/>
+    </vehicle>
+    <vehicle id="144" depart="14.40" type="vehicle.yamaha.yzf">
+        <route edges="-33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255"/>
+    </vehicle>
+    <vehicle id="145" depart="14.50" type="vehicle.harley-davidson.low_rider">
+        <route edges="-100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214"/>
+    </vehicle>
+    <vehicle id="146" depart="14.60" type="vehicle.kawasaki.ninja">
+        <route edges="-85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -341 -342 238 240 -240 -238 -237"/>
+    </vehicle>
+    <vehicle id="147" depart="14.70" type="vehicle.gazelle.omafiets">
+        <route edges="204 205#1 205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53"/>
+    </vehicle>
+    <vehicle id="148" depart="14.80" type="vehicle.diamondback.century">
+        <route edges="-332 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104"/>
+    </vehicle>
+    <vehicle id="150" depart="15.00" type="vehicle.bh.crossbike">
+        <route edges="53 56 -351 -339 -336 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 -51"/>
+    </vehicle>
+    <vehicle id="151" depart="15.10" type="vehicle.mercedes.coupe_2020">
+        <route edges="317 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -18 -6 -7"/>
+    </vehicle>
+    <vehicle id="152" depart="15.20" type="vehicle.dodge.charger_2020">
+        <route edges="-185 168 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 -168"/>
+    </vehicle>
+    <vehicle id="153" depart="15.30" type="vehicle.ford.ambulance">
+        <route edges="-260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47"/>
+    </vehicle>
+    <vehicle id="154" depart="15.40" type="vehicle.lincoln.mkz_2020">
+        <route edges="25 -45 -47 -49 -51 51 49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36"/>
+    </vehicle>
+    <vehicle id="155" depart="15.50" type="vehicle.mini.cooper_s_2021">
+        <route edges="49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1"/>
+    </vehicle>
+    <vehicle id="156" depart="15.60" type="vehicle.ford.crown">
+        <route edges="-223 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152"/>
+    </vehicle>
+    <vehicle id="158" depart="15.80" type="vehicle.vespa.zx125">
+        <route edges="-317 -304 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82"/>
+    </vehicle>
+    <vehicle id="159" depart="15.90" type="vehicle.nissan.patrol_2021">
+        <route edges="-191 -193#0 -193#1 -195 68 67"/>
+    </vehicle>
+    <vehicle id="160" depart="16.00" type="vehicle.dodge.charger_police_2020">
+        <route edges="371 -145 -142 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83"/>
+    </vehicle>
+    <vehicle id="162" depart="16.20" type="vehicle.mercedes.sprinter">
+        <route edges="-111 -112#0 -112#1 -113 -114#0 -114#1 -116 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204"/>
+    </vehicle>
+    <vehicle id="163" depart="16.30" type="vehicle.volkswagen.t2_2021">
+        <route edges="-27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67"/>
+    </vehicle>
+    <vehicle id="164" depart="16.40" type="vehicle.carlamotors.firetruck">
+        <route edges="280 279 -201 -200 60 58 -53 49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37"/>
+    </vehicle>
+    <vehicle id="166" depart="16.60" type="vehicle.audi.a2">
+        <route edges="222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159"/>
+    </vehicle>
+    <vehicle id="167" depart="16.70" type="vehicle.audi.tt">
+        <route edges="4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35"/>
+    </vehicle>
+    <vehicle id="168" depart="16.80" type="vehicle.bmw.grandtourer">
+        <route edges="-214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345 -347 -348 39 37 36 35 33 32 31 30"/>
+    </vehicle>
+    <vehicle id="170" depart="17.00" type="vehicle.chevrolet.impala">
+        <route edges="25 -45 -47 -49 53 56 -351 -339 -336 -332 -327 -324 228 -228 -220 -219 -218 -217"/>
+    </vehicle>
+    <vehicle id="171" depart="17.10" type="vehicle.citroen.c3">
+        <route edges="-109 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -221 -222 -223 -206"/>
+    </vehicle>
+    <vehicle id="173" depart="17.30" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256"/>
+    </vehicle>
+    <vehicle id="174" depart="17.40" type="vehicle.lincoln.mkz_2017">
+        <route edges="-86 -87 -27 -28 -30 -31 -32"/>
+    </vehicle>
+    <vehicle id="175" depart="17.50" type="vehicle.mercedes.coupe">
+        <route edges="84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45"/>
+    </vehicle>
+    <vehicle id="176" depart="17.60" type="vehicle.mini.cooper_s">
+        <route edges="70 68 67 66 -168 -166 -165 -159 -161 -162"/>
+    </vehicle>
+    <vehicle id="177" depart="17.70" type="vehicle.ford.mustang">
+        <route edges="81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 -279 -280 280 279 -201"/>
+    </vehicle>
+    <vehicle id="179" depart="17.90" type="vehicle.nissan.micra">
+        <route edges="-159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345 -347"/>
+    </vehicle>
+    <vehicle id="180" depart="18.00" type="vehicle.nissan.patrol">
+        <route edges="2#1 2#0 1 9 8 -267 -268"/>
+    </vehicle>
+    <vehicle id="181" depart="18.10" type="vehicle.seat.leon">
+        <route edges="-76 -147 -145 -406 -403"/>
+    </vehicle>
+    <vehicle id="182" depart="18.20" type="vehicle.volkswagen.t2">
+        <route edges="-30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 168 -66 -67"/>
+    </vehicle>
+    <vehicle id="183" depart="18.30" type="vehicle.dodge.charger_police">
+        <route edges="-23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165"/>
+    </vehicle>
+    <vehicle id="184" depart="18.40" type="vehicle.micro.microlino">
+        <route edges="-1 -2#0 -2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64"/>
+    </vehicle>
+    <vehicle id="185" depart="18.50" type="vehicle.toyota.prius">
+        <route edges="-42 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 185"/>
+    </vehicle>
+    <vehicle id="186" depart="18.60" type="vehicle.tesla.cybertruck">
+        <route edges="204 205#1 205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 109"/>
+    </vehicle>
+    <vehicle id="187" depart="18.70" type="vehicle.tesla.model3">
+        <route edges="-290#1 -292 -293 -130 -516 -120 -122 -123 -124 -126 -127 -128"/>
+    </vehicle>
+    <vehicle id="188" depart="18.80" type="vehicle.audi.etron">
+        <route edges="107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 -279"/>
+    </vehicle>
+    <vehicle id="189" depart="18.90" type="vehicle.carlamotors.carlacola">
+        <route edges="-260#2 -257 -256 -255 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33"/>
+    </vehicle>
+    <vehicle id="190" depart="19.00" type="vehicle.yamaha.yzf">
+        <route edges="168 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261"/>
+    </vehicle>
+    <vehicle id="191" depart="19.10" type="vehicle.harley-davidson.low_rider">
+        <route edges="-260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -324"/>
+    </vehicle>
+    <vehicle id="192" depart="19.20" type="vehicle.kawasaki.ninja">
+        <route edges="-31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1"/>
+    </vehicle>
+    <vehicle id="193" depart="19.30" type="vehicle.gazelle.omafiets">
+        <route edges="-168 -166 -165 -159 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -336"/>
+    </vehicle>
+    <vehicle id="194" depart="19.40" type="vehicle.diamondback.century">
+        <route edges="70 -183 -181 -180#0 -180#1 -179 -102 163 162 161 -152 124"/>
+    </vehicle>
+    <vehicle id="195" depart="19.50" type="vehicle.bh.crossbike">
+        <route edges="53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80"/>
+    </vehicle>
+    <vehicle id="196" depart="19.60" type="vehicle.mercedes.coupe_2020">
+        <route edges="-258 -259 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 -126 -127 -128 -130 -516"/>
+    </vehicle>
+    <vehicle id="197" depart="19.70" type="vehicle.dodge.charger_2020">
+        <route edges="-1 -2#0 -2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -258 -259"/>
+    </vehicle>
+    <vehicle id="198" depart="19.80" type="vehicle.ford.ambulance">
+        <route edges="-336 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68"/>
+    </vehicle>
+    <vehicle id="199" depart="19.90" type="vehicle.lincoln.mkz_2020">
+        <route edges="-96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376"/>
+    </vehicle>
+    <vehicle id="200" depart="20.00" type="vehicle.mini.cooper_s_2021">
+        <route edges="-345 -339 -336 -332 -327 -324 228 -228 -220 -221 -222 -223 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0"/>
+    </vehicle>
+    <vehicle id="201" depart="20.10" type="vehicle.ford.crown">
+        <route edges="-375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49"/>
+    </vehicle>
+    <vehicle id="202" depart="20.20" type="vehicle.vespa.zx125">
+        <route edges="25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0 -2#1"/>
+    </vehicle>
+    <vehicle id="203" depart="20.30" type="vehicle.nissan.patrol_2021">
+        <route edges="-138#0 -138#1 -139 79 78 -147 -145 -406"/>
+    </vehicle>
+    <vehicle id="204" depart="20.40" type="vehicle.dodge.charger_police_2020">
+        <route edges="-84#0 -84#1 -85 -86 -87 -27 -28"/>
+    </vehicle>
+    <vehicle id="205" depart="20.50" type="vehicle.mercedes.sprinter">
+        <route edges="304 317 -324 228 -228 -220 -221 -222 -223 208 209"/>
+    </vehicle>
+    <vehicle id="206" depart="20.60" type="vehicle.volkswagen.t2_2021">
+        <route edges="109 108#1 108#0 107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219 -218 -217 -216"/>
+    </vehicle>
+    <vehicle id="207" depart="20.70" type="vehicle.carlamotors.firetruck">
+        <route edges="-209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 -11"/>
+    </vehicle>
+    <vehicle id="208" depart="20.80" type="vehicle.audi.a2">
+        <route edges="-222 -223 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0"/>
+    </vehicle>
+    <vehicle id="209" depart="20.90" type="vehicle.audi.tt">
+        <route edges="332 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 -126 -127 -128 -130"/>
+    </vehicle>
+    <vehicle id="210" depart="21.00" type="vehicle.bmw.grandtourer">
+        <route edges="-321 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1"/>
+    </vehicle>
+    <vehicle id="211" depart="21.10" type="vehicle.chevrolet.impala">
+        <route edges="-206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162 161 159"/>
+    </vehicle>
+    <vehicle id="212" depart="21.20" type="vehicle.citroen.c3">
+        <route edges="-386 -388 -195 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -221 -222 -223"/>
+    </vehicle>
+    <vehicle id="213" depart="21.30" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-96 -94 -91 -74 -75 -76 -147 -145 -142 109 108#1 108#0 107 -98 -100"/>
+    </vehicle>
+    <vehicle id="214" depart="21.40" type="vehicle.lincoln.mkz_2017">
+        <route edges="206 208 209 211#1 211#0 212 213#1 213#0 214"/>
+    </vehicle>
+    <vehicle id="215" depart="21.50" type="vehicle.mercedes.coupe">
+        <route edges="-155 123 122 109 108#1 108#0 107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341"/>
+    </vehicle>
+    <vehicle id="216" depart="21.60" type="vehicle.mini.cooper_s">
+        <route edges="-200 -62 -63 -64 -168 -166 -165 -159 -152 -126 -127 -128 -138#0 -138#1 -139 79 78"/>
+    </vehicle>
+    <vehicle id="217" depart="21.70" type="vehicle.ford.mustang">
+        <route edges="-403 -404 -399 -401 406 -142 -134 -132 -120"/>
+    </vehicle>
+    <vehicle id="218" depart="21.80" type="vehicle.nissan.micra">
+        <route edges="-223 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33"/>
+    </vehicle>
+    <vehicle id="219" depart="21.90" type="vehicle.nissan.patrol">
+        <route edges="-351 -339 -341 -342 238 240"/>
+    </vehicle>
+    <vehicle id="220" depart="22.00" type="vehicle.seat.leon">
+        <route edges="108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9"/>
+    </vehicle>
+    <vehicle id="221" depart="22.10" type="vehicle.volkswagen.t2">
+        <route edges="-71 -72 91 94 96 -100 -102 -104 -107 -108#0 -108#1 -109 -111 -112#0 -112#1 -113 -114#0 -114#1 -116 76 75 74"/>
+    </vehicle>
+    <vehicle id="222" depart="22.20" type="vehicle.dodge.charger_police">
+        <route edges="45 -25 -23 -19 -18 -6 -7 -8"/>
+    </vehicle>
+    <vehicle id="223" depart="22.30" type="vehicle.micro.microlino">
+        <route edges="168 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0 -2#1 -3 -4#0 -4#1"/>
+    </vehicle>
+    <vehicle id="224" depart="22.40" type="vehicle.toyota.prius">
+        <route edges="31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 -126 -127 -128 -130 -516"/>
+    </vehicle>
+    <vehicle id="225" depart="22.50" type="vehicle.tesla.cybertruck">
+        <route edges="49 47 45 -25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1"/>
+    </vehicle>
+    <vehicle id="226" depart="22.60" type="vehicle.tesla.model3">
+        <route edges="-376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -237"/>
+    </vehicle>
+    <vehicle id="227" depart="22.70" type="vehicle.audi.etron">
+        <route edges="-222 -223 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87"/>
+    </vehicle>
+    <vehicle id="228" depart="22.80" type="vehicle.carlamotors.carlacola">
+        <route edges="212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -279 -280 280 279 203 215 -411"/>
+    </vehicle>
+    <vehicle id="229" depart="22.90" type="vehicle.yamaha.yzf">
+        <route edges="-82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255"/>
+    </vehicle>
+    <vehicle id="230" depart="23.00" type="vehicle.harley-davidson.low_rider">
+        <route edges="-134 -132 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -258"/>
+    </vehicle>
+    <vehicle id="231" depart="23.10" type="vehicle.kawasaki.ninja">
+        <route edges="-237 -236 -56 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273"/>
+    </vehicle>
+    <vehicle id="232" depart="23.20" type="vehicle.gazelle.omafiets">
+        <route edges="-42 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 -183 -181 -180#0 -180#1"/>
+    </vehicle>
+    <vehicle id="233" depart="23.30" type="vehicle.diamondback.century">
+        <route edges="-217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -107 -108#0 -108#1 -109 -122 -123 -124 152"/>
+    </vehicle>
+    <vehicle id="234" depart="23.40" type="vehicle.bh.crossbike">
+        <route edges="161 -152 -126 -127"/>
+    </vehicle>
+    <vehicle id="235" depart="23.50" type="vehicle.mercedes.coupe_2020">
+        <route edges="-319 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49"/>
+    </vehicle>
+    <vehicle id="236" depart="23.60" type="vehicle.dodge.charger_2020">
+        <route edges="-321 -324 228 -228 -220 -221 -222 -223 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0"/>
+    </vehicle>
+    <vehicle id="237" depart="23.70" type="vehicle.ford.ambulance">
+        <route edges="-327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 -51 51 53"/>
+    </vehicle>
+    <vehicle id="238" depart="23.80" type="vehicle.lincoln.mkz_2020">
+        <route edges="-67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162 161 159"/>
+    </vehicle>
+    <vehicle id="239" depart="23.90" type="vehicle.mini.cooper_s_2021">
+        <route edges="36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1"/>
+    </vehicle>
+    <vehicle id="240" depart="24.00" type="vehicle.ford.crown">
+        <route edges="-3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 91 94 96 -100"/>
+    </vehicle>
+    <vehicle id="242" depart="24.20" type="vehicle.vespa.zx125">
+        <route edges="35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75"/>
+    </vehicle>
+    <vehicle id="243" depart="24.30" type="vehicle.nissan.patrol_2021">
+        <route edges="-327 -324 228 -228 -220 -221 -222 -223 208"/>
+    </vehicle>
+    <vehicle id="244" depart="24.40" type="vehicle.dodge.charger_police_2020">
+        <route edges="-47 -49 53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76"/>
+    </vehicle>
+    <vehicle id="245" depart="24.50" type="vehicle.mercedes.sprinter">
+        <route edges="-214 -213#0 -213#1"/>
+    </vehicle>
+    <vehicle id="246" depart="24.60" type="vehicle.volkswagen.t2_2021">
+        <route edges="-341 -342 238 240 -240 -238 -237 -236 -56 -58 -60 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -111"/>
+    </vehicle>
+    <vehicle id="247" depart="24.70" type="vehicle.carlamotors.firetruck">
+        <route edges="-273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 91 94 96 -100 -102 163 162 161 -152 124"/>
+    </vehicle>
+    <vehicle id="248" depart="24.80" type="vehicle.audi.a2">
+        <route edges="-317 -304 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0"/>
+    </vehicle>
+    <vehicle id="249" depart="24.90" type="vehicle.audi.tt">
+        <route edges="-37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 -168"/>
+    </vehicle>
+    <vehicle id="250" depart="25.00" type="vehicle.bmw.grandtourer">
+        <route edges="-81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 -11"/>
+    </vehicle>
+    <vehicle id="251" depart="25.10" type="vehicle.chevrolet.impala">
+        <route edges="-306 -308 -309 306 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62"/>
+    </vehicle>
+    <vehicle id="252" depart="25.20" type="vehicle.citroen.c3">
+        <route edges="-111 -112#0 -112#1 -113 -114#0 -114#1 -116 76 75 74 72 71 70 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -18 -6 -7 -8 -9"/>
+    </vehicle>
+    <vehicle id="253" depart="25.30" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-180#0 -180#1 -179 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375"/>
+    </vehicle>
+    <vehicle id="254" depart="25.40" type="vehicle.lincoln.mkz_2017">
+        <route edges="-122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -317 -304"/>
+    </vehicle>
+    <vehicle id="255" depart="25.50" type="vehicle.mercedes.coupe">
+        <route edges="-212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8 7 6 -278"/>
+    </vehicle>
+    <vehicle id="256" depart="25.60" type="vehicle.mini.cooper_s">
+        <route edges="211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -317 -304"/>
+    </vehicle>
+    <vehicle id="257" depart="25.70" type="vehicle.ford.mustang">
+        <route edges="206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 -306 309"/>
+    </vehicle>
+    <vehicle id="258" depart="25.80" type="vehicle.nissan.micra">
+        <route edges="-228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -134 -136"/>
+    </vehicle>
+    <vehicle id="259" depart="25.90" type="vehicle.nissan.patrol">
+        <route edges="-108#1 -109 -122 -123 -124 152 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47"/>
+    </vehicle>
+    <vehicle id="261" depart="26.10" type="vehicle.seat.leon">
+        <route edges="-91 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 223 222 221"/>
+    </vehicle>
+    <vehicle id="262" depart="26.20" type="vehicle.volkswagen.t2">
+        <route edges="-94 -91 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0"/>
+    </vehicle>
+    <vehicle id="263" depart="26.30" type="vehicle.dodge.charger_police">
+        <route edges="74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209"/>
+    </vehicle>
+    <vehicle id="264" depart="26.40" type="vehicle.micro.microlino">
+        <route edges="-108#1 -109 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19"/>
+    </vehicle>
+    <vehicle id="265" depart="26.50" type="vehicle.toyota.prius">
+        <route edges="-168 -166 -165 -159 -152 124 123 122 109"/>
+    </vehicle>
+    <vehicle id="266" depart="26.60" type="vehicle.tesla.cybertruck">
+        <route edges="-6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1"/>
+    </vehicle>
+    <vehicle id="267" depart="26.70" type="vehicle.tesla.model3">
+        <route edges="152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1"/>
+    </vehicle>
+    <vehicle id="268" depart="26.80" type="vehicle.audi.etron">
+        <route edges="-2#0 -2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79"/>
+    </vehicle>
+    <vehicle id="269" depart="26.90" type="vehicle.carlamotors.carlacola">
+        <route edges="205#1 205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162"/>
+    </vehicle>
+    <vehicle id="270" depart="27.00" type="vehicle.yamaha.yzf">
+        <route edges="304 317 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8"/>
+    </vehicle>
+    <vehicle id="271" depart="27.10" type="vehicle.harley-davidson.low_rider">
+        <route edges="-159 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 -11"/>
+    </vehicle>
+    <vehicle id="272" depart="27.20" type="vehicle.kawasaki.ninja">
+        <route edges="-260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 91 94 96 -100 -102 163 162 161 -152 124"/>
+    </vehicle>
+    <vehicle id="273" depart="27.30" type="vehicle.gazelle.omafiets">
+        <route edges="78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304 -319"/>
+    </vehicle>
+    <vehicle id="274" depart="27.40" type="vehicle.diamondback.century">
+        <route edges="165 166 185 -181 -180#0 -180#1 -179 -102 -104 -107 -108#0 -108#1 -109 -134 -132"/>
+    </vehicle>
+    <vehicle id="275" depart="27.50" type="vehicle.bh.crossbike">
+        <route edges="126 152 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0"/>
+    </vehicle>
+    <vehicle id="276" depart="27.60" type="vehicle.mercedes.coupe_2020">
+        <route edges="-152 124 123 122 109 108#1 108#0 107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 215"/>
+    </vehicle>
+    <vehicle id="277" depart="27.70" type="vehicle.dodge.charger_2020">
+        <route edges="336 -341 -342 238 240 -240 -238 -237 -236 -56 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75"/>
+    </vehicle>
+    <vehicle id="278" depart="27.80" type="vehicle.ford.ambulance">
+        <route edges="-165 -159 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1"/>
+    </vehicle>
+    <vehicle id="280" depart="28.00" type="vehicle.lincoln.mkz_2020">
+        <route edges="-336 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0 -2#1 -3"/>
+    </vehicle>
+    <vehicle id="282" depart="28.20" type="vehicle.mini.cooper_s_2021">
+        <route edges="332 -299 304"/>
+    </vehicle>
+    <vehicle id="283" depart="28.30" type="vehicle.ford.crown">
+        <route edges="-155 123 122 -134 -136 -138#0 -138#1 -139 79"/>
+    </vehicle>
+    <vehicle id="284" depart="28.40" type="vehicle.vespa.zx125">
+        <route edges="-84#1 -85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -336 -299 -306 309 308"/>
+    </vehicle>
+    <vehicle id="285" depart="28.50" type="vehicle.nissan.patrol_2021">
+        <route edges="162 161 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345 -347"/>
+    </vehicle>
+    <vehicle id="286" depart="28.60" type="vehicle.dodge.charger_police_2020">
+        <route edges="200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8"/>
+    </vehicle>
+    <vehicle id="287" depart="28.70" type="vehicle.mercedes.sprinter">
+        <route edges="-237 -236 -56 -53 -51 51 53 56 -351 -339 -336 -332 -327 -317 -304 299"/>
+    </vehicle>
+    <vehicle id="288" depart="28.80" type="vehicle.volkswagen.t2_2021">
+        <route edges="-414 219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191 -382 -384"/>
+    </vehicle>
+    <vehicle id="289" depart="28.90" type="vehicle.carlamotors.firetruck">
+        <route edges="-341 -342 238 240 -240 -238 -237 -236 -56 -58 -60 -62 -63 -64 -66 -67 -68 -183 -185 168 64 63 62 200 201"/>
+    </vehicle>
+    <vehicle id="290" depart="29.00" type="vehicle.audi.a2">
+        <route edges="-236 -56 -53 -51 51 53 56 -351 -339 -336 -332 -327 321 332"/>
+    </vehicle>
+    <vehicle id="291" depart="29.10" type="vehicle.audi.tt">
+        <route edges="31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134 -136 -138#0 -138#1"/>
+    </vehicle>
+    <vehicle id="293" depart="29.30" type="vehicle.bmw.grandtourer">
+        <route edges="-369 -292 -293 -130 -516 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -18 -6 -7 -8"/>
+    </vehicle>
+    <vehicle id="294" depart="29.40" type="vehicle.chevrolet.impala">
+        <route edges="-299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -111"/>
+    </vehicle>
+    <vehicle id="295" depart="29.50" type="vehicle.citroen.c3">
+        <route edges="336 -341 -342 238 240 -240 -238 -349 -345 -339 -336 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203"/>
+    </vehicle>
+    <vehicle id="296" depart="29.60" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-212 -211#0 -211#1 301 299 336 -341 -342 238"/>
+    </vehicle>
+    <vehicle id="297" depart="29.70" type="vehicle.lincoln.mkz_2017">
+        <route edges="-275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -258 -259 -19 -20 -21 4#1"/>
+    </vehicle>
+    <vehicle id="298" depart="29.80" type="vehicle.mercedes.coupe">
+        <route edges="159 165 166 168 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255"/>
+    </vehicle>
+    <vehicle id="299" depart="29.90" type="vehicle.mini.cooper_s">
+        <route edges="-104 -98 -96 -94 -91 72"/>
+    </vehicle>
+    <vehicle id="300" depart="30.00" type="vehicle.ford.mustang">
+        <route edges="-138#0 -138#1 -139 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0"/>
+    </vehicle>
+    <vehicle id="301" depart="30.10" type="vehicle.nissan.micra">
+        <route edges="-380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1"/>
+    </vehicle>
+    <vehicle id="302" depart="30.20" type="vehicle.nissan.patrol">
+        <route edges="126 152 -161 -162 -163 -104 -98 -96 -94 -91"/>
+    </vehicle>
+    <vehicle id="304" depart="30.40" type="vehicle.seat.leon">
+        <route edges="-142 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219 -218 -217 -216 -215"/>
+    </vehicle>
+    <vehicle id="306" depart="30.60" type="vehicle.volkswagen.t2">
+        <route edges="-67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0"/>
+    </vehicle>
+    <vehicle id="307" depart="30.70" type="vehicle.dodge.charger_police">
+        <route edges="-412 -413 -414 219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 56 -351 -339 -341"/>
+    </vehicle>
+    <vehicle id="308" depart="30.80" type="vehicle.micro.microlino">
+        <route edges="205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -279"/>
+    </vehicle>
+    <vehicle id="310" depart="31.00" type="vehicle.toyota.prius">
+        <route edges="-228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165"/>
+    </vehicle>
+    <vehicle id="311" depart="31.10" type="vehicle.tesla.cybertruck">
+        <route edges="-205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165"/>
+    </vehicle>
+    <vehicle id="312" depart="31.20" type="vehicle.tesla.model3">
+        <route edges="-414 219 220 228 -228 -220 -221 -222 -223 208 209 211#1 211#0 212"/>
+    </vehicle>
+    <vehicle id="313" depart="31.30" type="vehicle.audi.etron">
+        <route edges="-204 -203 -279 -280 280 279 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0"/>
+    </vehicle>
+    <vehicle id="314" depart="31.40" type="vehicle.carlamotors.carlacola">
+        <route edges="-380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1"/>
+    </vehicle>
+    <vehicle id="315" depart="31.50" type="vehicle.yamaha.yzf">
+        <route edges="83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 215 -411 -412 -413"/>
+    </vehicle>
+    <vehicle id="316" depart="31.60" type="vehicle.harley-davidson.low_rider">
+        <route edges="-248 -246 -49 53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147"/>
+    </vehicle>
+    <vehicle id="317" depart="31.70" type="vehicle.kawasaki.ninja">
+        <route edges="-206 -205#0 -205#1 -204 -203 -279 -280 280 279 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219 -218 -217"/>
+    </vehicle>
+    <vehicle id="318" depart="31.80" type="vehicle.gazelle.omafiets">
+        <route edges="-201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -107"/>
+    </vehicle>
+    <vehicle id="319" depart="31.90" type="vehicle.diamondback.century">
+        <route edges="-413 -414 219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25"/>
+    </vehicle>
+    <vehicle id="320" depart="32.00" type="vehicle.bh.crossbike">
+        <route edges="82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -237 -236 -56"/>
+    </vehicle>
+    <vehicle id="321" depart="32.10" type="vehicle.mercedes.coupe_2020">
+        <route edges="152 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 -168"/>
+    </vehicle>
+    <vehicle id="322" depart="32.20" type="vehicle.dodge.charger_2020">
+        <route edges="39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39"/>
+    </vehicle>
+    <vehicle id="323" depart="32.30" type="vehicle.ford.ambulance">
+        <route edges="4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 168 -66"/>
+    </vehicle>
+    <vehicle id="324" depart="32.40" type="vehicle.lincoln.mkz_2020">
+        <route edges="-371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -341 -342 238 240 -240 -238 -349"/>
+    </vehicle>
+    <vehicle id="325" depart="32.50" type="vehicle.mini.cooper_s_2021">
+        <route edges="-204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -134 -132 -120"/>
+    </vehicle>
+    <vehicle id="326" depart="32.60" type="vehicle.ford.crown">
+        <route edges="70 -183 -181 -180#0 -180#1 -179 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1"/>
+    </vehicle>
+    <vehicle id="327" depart="32.70" type="vehicle.vespa.zx125">
+        <route edges="306 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -27 -28 -30 -31 -32"/>
+    </vehicle>
+    <vehicle id="328" depart="32.80" type="vehicle.nissan.patrol_2021">
+        <route edges="-132 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1"/>
+    </vehicle>
+    <vehicle id="329" depart="32.90" type="vehicle.dodge.charger_police_2020">
+        <route edges="-123 -124 152 159 165 166 168 -66 -67 -68 -183 -185"/>
+    </vehicle>
+    <vehicle id="330" depart="33.00" type="vehicle.mercedes.sprinter">
+        <route edges="-6 -7 -8 -9 -11 11 9 -275 -274 -273 -262"/>
+    </vehicle>
+    <vehicle id="331" depart="33.10" type="vehicle.volkswagen.t2_2021">
+        <route edges="94 96 -100 -102 -104 -107 -108#0 -108#1 -109 -122 -123 -124 152 -161 -162 -163"/>
+    </vehicle>
+    <vehicle id="332" depart="33.20" type="vehicle.carlamotors.firetruck">
+        <route edges="211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78"/>
+    </vehicle>
+    <vehicle id="333" depart="33.30" type="vehicle.audi.a2">
+        <route edges="223 222 221 220 228 -228 -220 -219 -218 -217"/>
+    </vehicle>
+    <vehicle id="334" depart="33.40" type="vehicle.audi.tt">
+        <route edges="-404 -399 -396 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36"/>
+    </vehicle>
+    <vehicle id="335" depart="33.50" type="vehicle.bmw.grandtourer">
+        <route edges="-345 -347 -348 39 37 36"/>
+    </vehicle>
+    <vehicle id="337" depart="33.70" type="vehicle.chevrolet.impala">
+        <route edges="-81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79"/>
+    </vehicle>
+    <vehicle id="338" depart="33.80" type="vehicle.citroen.c3">
+        <route edges="204 205#1 205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -96 -94 -91 72"/>
+    </vehicle>
+    <vehicle id="339" depart="33.90" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-211#0 -211#1 -209 -208 223 222 221 220 228 -228 -220 -221 -222 -223 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212"/>
+    </vehicle>
+    <vehicle id="340" depart="34.00" type="vehicle.lincoln.mkz_2017">
+        <route edges="-98 -100 -191 -193#0"/>
+    </vehicle>
+    <vehicle id="341" depart="34.10" type="vehicle.mercedes.coupe">
+        <route edges="-20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134 -132"/>
+    </vehicle>
+    <vehicle id="342" depart="34.20" type="vehicle.mini.cooper_s">
+        <route edges="-1 -2#0 -2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -30 -31 -32 -33 -35 -36"/>
+    </vehicle>
+    <vehicle id="343" depart="34.30" type="vehicle.ford.mustang">
+        <route edges="-71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0"/>
+    </vehicle>
+    <vehicle id="344" depart="34.40" type="vehicle.nissan.micra">
+        <route edges="-217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163"/>
+    </vehicle>
+    <vehicle id="345" depart="34.50" type="vehicle.nissan.patrol">
+        <route edges="159 165 166 185 -181 -180#0 -180#1 -179 -102 -104 -107 -108#0 -108#1 -109 -111 -112#0 -112#1 -113 -114#0 -114#1 -369"/>
+    </vehicle>
+    <vehicle id="346" depart="34.60" type="vehicle.seat.leon">
+        <route edges="124 123 122 109 108#1 108#0 107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64"/>
+    </vehicle>
+    <vehicle id="347" depart="34.70" type="vehicle.volkswagen.t2">
+        <route edges="222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0"/>
+    </vehicle>
+    <vehicle id="348" depart="34.80" type="vehicle.dodge.charger_police">
+        <route edges="1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68"/>
+    </vehicle>
+    <vehicle id="349" depart="34.90" type="vehicle.micro.microlino">
+        <route edges="-332 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 -51"/>
+    </vehicle>
+    <vehicle id="350" depart="35.00" type="vehicle.toyota.prius">
+        <route edges="-9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 56"/>
+    </vehicle>
+    <vehicle id="351" depart="35.10" type="vehicle.tesla.cybertruck">
+        <route edges="309 308 306 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 -126 -127 -128 -130"/>
+    </vehicle>
+    <vehicle id="353" depart="35.30" type="vehicle.tesla.model3">
+        <route edges="205#1 205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63"/>
+    </vehicle>
+    <vehicle id="354" depart="35.40" type="vehicle.audi.etron">
+        <route edges="-25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 -168 -166"/>
+    </vehicle>
+    <vehicle id="355" depart="35.50" type="vehicle.carlamotors.carlacola">
+        <route edges="126 152 -161 -162 -163 -104 -98 -100 -102 163 162 161"/>
+    </vehicle>
+    <vehicle id="356" depart="35.60" type="vehicle.yamaha.yzf">
+        <route edges="71 70 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0 -2#1 -3 -4#0"/>
+    </vehicle>
+    <vehicle id="357" depart="35.70" type="vehicle.harley-davidson.low_rider">
+        <route edges="-386 -388 -195 -70 -71 -72 -74 -75 -76 -147 -145 -142 -134 -136"/>
+    </vehicle>
+    <vehicle id="358" depart="35.80" type="vehicle.kawasaki.ninja">
+        <route edges="-114#1 -116 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345"/>
+    </vehicle>
+    <vehicle id="360" depart="36.00" type="vehicle.gazelle.omafiets">
+        <route edges="-139 79"/>
+    </vehicle>
+    <vehicle id="361" depart="36.10" type="vehicle.diamondback.century">
+        <route edges="32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 159 165 166 168 -66"/>
+    </vehicle>
+    <vehicle id="362" depart="36.20" type="vehicle.bh.crossbike">
+        <route edges="74 91 94 96"/>
+    </vehicle>
+    <vehicle id="364" depart="36.40" type="vehicle.mercedes.coupe_2020">
+        <route edges="-114#1 -116 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1"/>
+    </vehicle>
+    <vehicle id="365" depart="36.50" type="vehicle.dodge.charger_2020">
+        <route edges="-371 -91 -74 -75 -76 -147 -145 -142 109 108#1 108#0 107 -98 -96"/>
+    </vehicle>
+    <vehicle id="366" depart="36.60" type="vehicle.ford.ambulance">
+        <route edges="60 58 56 -351 -339 -336 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203"/>
+    </vehicle>
+    <vehicle id="367" depart="36.70" type="vehicle.lincoln.mkz_2020">
+        <route edges="-68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86"/>
+    </vehicle>
+    <vehicle id="368" depart="36.80" type="vehicle.mini.cooper_s_2021">
+        <route edges="-382 -386 -388 -195 -70 -71 -72 -74 -75 -76 -147 -145 -142 -134 -136 -138#0 -138#1 -139"/>
+    </vehicle>
+    <vehicle id="369" depart="36.90" type="vehicle.ford.crown">
+        <route edges="-28"/>
+    </vehicle>
+    <vehicle id="370" depart="37.00" type="vehicle.vespa.zx125">
+        <route edges="108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35"/>
+    </vehicle>
+    <vehicle id="372" depart="37.20" type="vehicle.nissan.patrol_2021">
+        <route edges="-25 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72"/>
+    </vehicle>
+    <vehicle id="373" depart="37.30" type="vehicle.dodge.charger_police_2020">
+        <route edges="301 299 -332 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53"/>
+    </vehicle>
+    <vehicle id="374" depart="37.40" type="vehicle.mercedes.sprinter">
+        <route edges="-35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27"/>
+    </vehicle>
+    <vehicle id="375" depart="37.50" type="vehicle.volkswagen.t2_2021">
+        <route edges="-263 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81"/>
+    </vehicle>
+    <vehicle id="376" depart="37.60" type="vehicle.carlamotors.firetruck">
+        <route edges="-317 -304 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147 -145 -406 -403 -404"/>
+    </vehicle>
+    <vehicle id="377" depart="37.70" type="vehicle.audi.a2">
+        <route edges="9 8 7 6 4#1 4#0 3 2#1 2#0 1"/>
+    </vehicle>
+    <vehicle id="378" depart="37.80" type="vehicle.audi.tt">
+        <route edges="-45 -47 -49 -51 51 49 47 45 -25 -27 -28 -30 -31 -32 -33"/>
+    </vehicle>
+    <vehicle id="379" depart="37.90" type="vehicle.bmw.grandtourer">
+        <route edges="-205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -295 -290#0 -290#1 -292 -293"/>
+    </vehicle>
+    <vehicle id="380" depart="38.00" type="vehicle.chevrolet.impala">
+        <route edges="209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0"/>
+    </vehicle>
+    <vehicle id="381" depart="38.10" type="vehicle.citroen.c3">
+        <route edges="211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21"/>
+    </vehicle>
+    <vehicle id="382" depart="38.20" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-49 53 -58 -60 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66"/>
+    </vehicle>
+    <vehicle id="383" depart="38.30" type="vehicle.lincoln.mkz_2017">
+        <route edges="-342 238 240 -240 -238 -237 -236 -56 -58 -60 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162 161"/>
+    </vehicle>
+    <vehicle id="384" depart="38.40" type="vehicle.mercedes.coupe">
+        <route edges="-165 -159 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82"/>
+    </vehicle>
+    <vehicle id="385" depart="38.50" type="vehicle.mini.cooper_s">
+        <route edges="-78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -336 -332 -327 -324 228 -228 -220 -221"/>
+    </vehicle>
+    <vehicle id="386" depart="38.60" type="vehicle.ford.mustang">
+        <route edges="-193#0 -193#1 -195 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53"/>
+    </vehicle>
+    <vehicle id="387" depart="38.70" type="vehicle.nissan.micra">
+        <route edges="-516 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -147 -145 -142"/>
+    </vehicle>
+    <vehicle id="388" depart="38.80" type="vehicle.nissan.patrol">
+        <route edges="91 94 96 -100 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8 7 6"/>
+    </vehicle>
+    <vehicle id="389" depart="38.90" type="vehicle.seat.leon">
+        <route edges="-36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 -161 -162 -163"/>
+    </vehicle>
+    <vehicle id="390" depart="39.00" type="vehicle.volkswagen.t2">
+        <route edges="317 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147 -145 -406 -403 -404 -399"/>
+    </vehicle>
+    <vehicle id="391" depart="39.10" type="vehicle.dodge.charger_police">
+        <route edges="166 168 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147 -145 -406 -403 -404 -399 -401"/>
+    </vehicle>
+    <vehicle id="392" depart="39.20" type="vehicle.micro.microlino">
+        <route edges="-238 -349 -345 -347 -348 39 37 36 35 33 32 31"/>
+    </vehicle>
+    <vehicle id="393" depart="39.30" type="vehicle.toyota.prius">
+        <route edges="84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -221 -222"/>
+    </vehicle>
+    <vehicle id="394" depart="39.40" type="vehicle.tesla.cybertruck">
+        <route edges="-516 -120 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 -306"/>
+    </vehicle>
+    <vehicle id="395" depart="39.50" type="vehicle.tesla.model3">
+        <route edges="63 62 200 201 -279 -280 280 279 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147 -145 -406 -403 -404 -399 -401"/>
+    </vehicle>
+    <vehicle id="397" depart="39.70" type="vehicle.audi.etron">
+        <route edges="-240 -238 -349 -345 -339 -336 -332 -327 -324 228"/>
+    </vehicle>
+    <vehicle id="398" depart="39.80" type="vehicle.carlamotors.carlacola">
+        <route edges="-321 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68"/>
+    </vehicle>
+    <vehicle id="399" depart="39.90" type="vehicle.yamaha.yzf">
+        <route edges="-4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304"/>
+    </vehicle>
+    <vehicle id="400" depart="40.00" type="vehicle.harley-davidson.low_rider">
+        <route edges="-248 -246 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2"/>
+    </vehicle>
+    <vehicle id="401" depart="40.10" type="vehicle.kawasaki.ninja">
+        <route edges="-68 -70 -71 -72 91 94 96"/>
+    </vehicle>
+    <vehicle id="402" depart="40.20" type="vehicle.gazelle.omafiets">
+        <route edges="-382 -386 -388 -195 -70 -71 -72 91 94 96 -100 -102 163 162 161 159 165 166 168 -66 -67 -68 -183 -185"/>
+    </vehicle>
+    <vehicle id="404" depart="40.40" type="vehicle.diamondback.century">
+        <route edges="-516 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51"/>
+    </vehicle>
+    <vehicle id="405" depart="40.50" type="vehicle.bh.crossbike">
+        <route edges="-35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274"/>
+    </vehicle>
+    <vehicle id="406" depart="40.60" type="vehicle.mercedes.coupe_2020">
+        <route edges="-205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163 162 161 159"/>
+    </vehicle>
+    <vehicle id="407" depart="40.70" type="vehicle.dodge.charger_2020">
+        <route edges="-62 -63 -64 -66 -67 -68 -183 -185 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219"/>
+    </vehicle>
+    <vehicle id="408" depart="40.80" type="vehicle.ford.ambulance">
+        <route edges="215 -411 -412 -413 -414 219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 124 123 122 -111 -112#0 -112#1 -113 -114#0 -114#1"/>
+    </vehicle>
+    <vehicle id="409" depart="40.90" type="vehicle.lincoln.mkz_2020">
+        <route edges="205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -183 -181 -180#0 -180#1 -179 -102 163"/>
+    </vehicle>
+    <vehicle id="410" depart="41.00" type="vehicle.mini.cooper_s_2021">
+        <route edges="30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 -306 -308"/>
+    </vehicle>
+    <vehicle id="411" depart="41.10" type="vehicle.ford.crown">
+        <route edges="107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304"/>
+    </vehicle>
+    <vehicle id="412" depart="41.20" type="vehicle.vespa.zx125">
+        <route edges="84#0 83 82 81 80 79 78 -147 -145 -406 -403 -404 -399 -396"/>
+    </vehicle>
+    <vehicle id="413" depart="41.30" type="vehicle.nissan.patrol_2021">
+        <route edges="-114#0 -114#1 -116 76 75 74 72 71 70 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 13 -13 -1 -2#0 -2#1 -3 -4#0"/>
+    </vehicle>
+    <vehicle id="414" depart="41.40" type="vehicle.dodge.charger_police_2020">
+        <route edges="-7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -30 -31 -32 -33 -35 -36 -37 -39 39"/>
+    </vehicle>
+    <vehicle id="415" depart="41.50" type="vehicle.mercedes.sprinter">
+        <route edges="4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349"/>
+    </vehicle>
+    <vehicle id="416" depart="41.60" type="vehicle.volkswagen.t2_2021">
+        <route edges="-406 -403 -404 -399 -396 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37"/>
+    </vehicle>
+    <vehicle id="417" depart="41.70" type="vehicle.carlamotors.firetruck">
+        <route edges="185 -181 -180#0 -180#1 -179 -102 163 162 161 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327"/>
+    </vehicle>
+    <vehicle id="418" depart="41.80" type="vehicle.audi.a2">
+        <route edges="-96 -94 -91 -74 -75 -76 -147 -145 -142 109 108#1 108#0 107 -98 -100 -191"/>
+    </vehicle>
+    <vehicle id="419" depart="41.90" type="vehicle.audi.tt">
+        <route edges="-371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80"/>
+    </vehicle>
+    <vehicle id="420" depart="42.00" type="vehicle.bmw.grandtourer">
+        <route edges="-274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152"/>
+    </vehicle>
+    <vehicle id="421" depart="42.10" type="vehicle.chevrolet.impala">
+        <route edges="-91 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304 317 327 332"/>
+    </vehicle>
+    <vehicle id="422" depart="42.20" type="vehicle.citroen.c3">
+        <route edges="336 -341 -342 238 240 -240 -238 -349 -345 -347 -348 39 37 36 35"/>
+    </vehicle>
+    <vehicle id="423" depart="42.30" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="-3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27"/>
+    </vehicle>
+    <vehicle id="424" depart="42.40" type="vehicle.lincoln.mkz_2017">
+        <route edges="168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212"/>
+    </vehicle>
+    <vehicle id="425" depart="42.50" type="vehicle.mercedes.coupe">
+        <route edges="4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134 -132 -120 -111 -112#0 -112#1"/>
+    </vehicle>
+    <vehicle id="426" depart="42.60" type="vehicle.mini.cooper_s">
+        <route edges="-13 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85"/>
+    </vehicle>
+    <vehicle id="427" depart="42.70" type="vehicle.ford.mustang">
+        <route edges="63 62 200 201 -279 -280 280 279 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 91 94 96"/>
+    </vehicle>
+    <vehicle id="428" depart="42.80" type="vehicle.nissan.micra">
+        <route edges="205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349 -345 -347"/>
+    </vehicle>
+    <vehicle id="429" depart="42.90" type="vehicle.nissan.patrol">
+        <route edges="-147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85"/>
+    </vehicle>
+    <vehicle id="430" depart="43.00" type="vehicle.seat.leon">
+        <route edges="4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -30 -31 -32 -33 -35"/>
+    </vehicle>
+    <vehicle id="431" depart="43.10" type="vehicle.volkswagen.t2">
+        <route edges="127 126 152 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53"/>
+    </vehicle>
+    <vehicle id="432" depart="43.20" type="vehicle.dodge.charger_police">
+        <route edges="-120 -122 -123 -124 152 159 165 166 168 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238"/>
+    </vehicle>
+    <vehicle id="433" depart="43.30" type="vehicle.micro.microlino">
+        <route edges="-255 -30"/>
+    </vehicle>
+    <vehicle id="434" depart="43.40" type="vehicle.toyota.prius">
+        <route edges="-183 -181 -180#0 -180#1 -179 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -42"/>
+    </vehicle>
+    <vehicle id="435" depart="43.50" type="vehicle.tesla.cybertruck">
+        <route edges="-60 -62 -63 -64 -66 -67 -68 -183 -185 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228"/>
+    </vehicle>
+    <vehicle id="436" depart="43.60" type="vehicle.tesla.model3">
+        <route edges="-2#1 -3 -4#0 -4#1 -6 -7 -8 -9 -11 11 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134"/>
+    </vehicle>
+    <vehicle id="438" depart="43.80" type="vehicle.audi.etron">
+        <route edges="-220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8 7 6"/>
+    </vehicle>
+    <vehicle id="439" depart="43.90" type="vehicle.carlamotors.carlacola">
+        <route edges="-181 -180#0 -180#1 -179 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375"/>
+    </vehicle>
+    <vehicle id="441" depart="44.10" type="vehicle.yamaha.yzf">
+        <route edges="-104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25"/>
+    </vehicle>
+    <vehicle id="442" depart="44.20" type="vehicle.harley-davidson.low_rider">
+        <route edges="51 53 -58 -60 -62 -63 -64 -168 -166 -165 -159 -152 124"/>
+    </vehicle>
+    <vehicle id="443" depart="44.30" type="vehicle.kawasaki.ninja">
+        <route edges="-193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -349"/>
+    </vehicle>
+    <vehicle id="444" depart="44.40" type="vehicle.gazelle.omafiets">
+        <route edges="-279 -280 280 279 -201 -200 -62 -63 -64 -66 -67 -68 -70"/>
+    </vehicle>
+    <vehicle id="445" depart="44.50" type="vehicle.diamondback.century">
+        <route edges="-85 -86 -87 25 -45 -47 -49 53 56 -351 -339 -341"/>
+    </vehicle>
+    <vehicle id="446" depart="44.60" type="vehicle.bh.crossbike">
+        <route edges="-223 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304 317 327"/>
+    </vehicle>
+    <vehicle id="447" depart="44.70" type="vehicle.mercedes.coupe_2020">
+        <route edges="-209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58 56 -351 -339 -336 -299 -306 -308"/>
+    </vehicle>
+    <vehicle id="448" depart="44.80" type="vehicle.dodge.charger_2020">
+        <route edges="-380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220"/>
+    </vehicle>
+    <vehicle id="449" depart="44.90" type="vehicle.ford.ambulance">
+        <route edges="-63 -64 -66"/>
+    </vehicle>
+    <vehicle id="450" depart="45.00" type="vehicle.lincoln.mkz_2020">
+        <route edges="91 94 96 -100 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1"/>
+    </vehicle>
+    <vehicle id="451" depart="45.10" type="vehicle.mini.cooper_s_2021">
+        <route edges="83 82 81 80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1"/>
+    </vehicle>
+    <vehicle id="452" depart="45.20" type="vehicle.ford.crown">
+        <route edges="-238 -237 -236 -56 -58 -60 -62"/>
+    </vehicle>
+    <vehicle id="453" depart="45.30" type="vehicle.vespa.zx125">
+        <route edges="124 123 122 109 108#1 108#0 107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206"/>
+    </vehicle>
+    <vehicle id="454" depart="45.40" type="vehicle.nissan.patrol_2021">
+        <route edges="-122 -123 -124 152 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78"/>
+    </vehicle>
+    <vehicle id="455" depart="45.50" type="vehicle.dodge.charger_police_2020">
+        <route edges="-388 -195 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53"/>
+    </vehicle>
+    <vehicle id="456" depart="45.60" type="vehicle.mercedes.sprinter">
+        <route edges="-249 -248 -246 -49 53 56 -351 -339 -341 -342 238 240"/>
+    </vehicle>
+    <vehicle id="457" depart="45.70" type="vehicle.volkswagen.t2_2021">
+        <route edges="-76 -295 -290#0"/>
+    </vehicle>
+    <vehicle id="458" depart="45.80" type="vehicle.carlamotors.firetruck">
+        <route edges="-85 -86 -87 25 -45 -47 -49 53 -58 -60 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -78 -79 -80 -81 -82"/>
+    </vehicle>
+    <vehicle id="459" depart="45.90" type="vehicle.audi.a2">
+        <route edges="11 9 8 7 6 4#1 4#0 3 2#1 2#0"/>
+    </vehicle>
+    <vehicle id="460" depart="46.00" type="vehicle.audi.tt">
+        <route edges="-98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 304 317"/>
+    </vehicle>
+    <vehicle id="461" depart="46.10" type="vehicle.bmw.grandtourer">
+        <route edges="-83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 53"/>
+    </vehicle>
+    <vehicle id="462" depart="46.20" type="vehicle.chevrolet.impala">
+        <route edges="-9 -11 11 9 8 -267"/>
+    </vehicle>
+    <vehicle id="463" depart="46.30" type="vehicle.citroen.c3">
+        <route edges="-345 -339 -336 -299 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -66 -67 -68"/>
+    </vehicle>
+    <vehicle id="464" depart="46.40" type="vehicle.jeep.wrangler_rubicon">
+        <route edges="200 201 -279 -280 280 279 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 -126 -127 -128 -138#0 -138#1 -139"/>
+    </vehicle>
+    <vehicle id="465" depart="46.50" type="vehicle.lincoln.mkz_2017">
+        <route edges="-256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208"/>
+    </vehicle>
+    <vehicle id="466" depart="46.60" type="vehicle.mercedes.coupe">
+        <route edges="-200 60 58 -53 49 47 45 -25 -23 -19 -18"/>
+    </vehicle>
+    <vehicle id="467" depart="46.70" type="vehicle.mini.cooper_s">
+        <route edges="-42 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81"/>
+    </vehicle>
+    <vehicle id="468" depart="46.80" type="vehicle.ford.mustang">
+        <route edges="-412 -413 -414 219 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 60 58 -53 49 47 45 -25 -23 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 8 7 6"/>
+    </vehicle>
+    <vehicle id="469" depart="46.90" type="vehicle.nissan.micra">
+        <route edges="31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336 -341 -342 238 240 -240 -238 -237 -236"/>
+    </vehicle>
+    <vehicle id="470" depart="47.00" type="vehicle.nissan.patrol">
+        <route edges="308 306 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191 -382 -384"/>
+    </vehicle>
+    <vehicle id="471" depart="47.10" type="vehicle.seat.leon">
+        <route edges="299 -332 -327 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -279 -280 280 279 203 204 205#1 205#0 206"/>
+    </vehicle>
+    <vehicle id="472" depart="47.20" type="vehicle.volkswagen.t2">
+        <route edges="-274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -122 -123 -124 152 -161 -162"/>
+    </vehicle>
+    <vehicle id="473" depart="47.30" type="vehicle.dodge.charger_police">
+        <route edges="79 78 76 75 74 72 71 70 -183 -181"/>
+    </vehicle>
+    <vehicle id="474" depart="47.40" type="vehicle.micro.microlino">
+        <route edges="80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36"/>
+    </vehicle>
+    <vehicle id="475" depart="47.50" type="vehicle.toyota.prius">
+        <route edges="185 -181 -180#0 -180#1 -179 -102 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0"/>
+    </vehicle>
+    <vehicle id="476" depart="47.60" type="vehicle.tesla.cybertruck">
+        <route edges="80 79 78 -147 -371 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25"/>
+    </vehicle>
+    <vehicle id="477" depart="47.70" type="vehicle.tesla.model3">
+        <route edges="-290#1 -292 -293 128 127 126 152 159 165 166 168 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228"/>
+    </vehicle>
+    <vehicle id="478" depart="47.80" type="vehicle.audi.etron">
+        <route edges="-107 -108#0 -108#1 -109 -122 -123 -124 152 -161 -162 -163 -104 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45"/>
+    </vehicle>
+    <vehicle id="479" depart="47.90" type="vehicle.carlamotors.carlacola">
+        <route edges="-35 -36 -37 -39 39 37 36 35 33 32 31 30 -380#0 -380#1 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 -147 -145 -142 -134 -136 128 127 126 -155 123 122"/>
+    </vehicle>
+    <vehicle id="480" depart="48.00" type="vehicle.yamaha.yzf">
+        <route edges="108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 25 -45 -47 -49 -51 51 49 47 45 -25 -23 -19 -18 -6 -7"/>
+    </vehicle>
+    <vehicle id="481" depart="48.10" type="vehicle.harley-davidson.low_rider">
+        <route edges="306 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -96 -94 -91 72 71 70"/>
+    </vehicle>
+    <vehicle id="482" depart="48.20" type="vehicle.kawasaki.ninja">
+        <route edges="-159 -161 -162 -163 -104 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 215 -411 -412 -413 -414 219 220 228 -228 -220 -219"/>
+    </vehicle>
+    <vehicle id="484" depart="48.40" type="vehicle.gazelle.omafiets">
+        <route edges="-58 -60 -62 -63 -64 -66 -67 -68 -183 -185 168 64 63 62 200 201 -279 -280 280 279 -201 -200 60"/>
+    </vehicle>
+    <vehicle id="485" depart="48.50" type="vehicle.diamondback.century">
+        <route edges="-214 -213#0 -213#1 -212 -211#0 -211#1 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -152 -126"/>
+    </vehicle>
+    <vehicle id="486" depart="48.60" type="vehicle.bh.crossbike">
+        <route edges="308 306 -301 -209 -208 -206 -205#0 -205#1 -204 -203 -201 -200 60 58"/>
+    </vehicle>
+    <vehicle id="487" depart="48.70" type="vehicle.mercedes.coupe_2020">
+        <route edges="-258 -259 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -375 -376 -377 -378 85 84#1 84#0 83 82 81 80 79 78 76 75 74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -324"/>
+    </vehicle>
+    <vehicle id="488" depart="48.80" type="vehicle.dodge.charger_2020">
+        <route edges="-180#1 -179 -102 -104 -98 -96 -94 -91 72"/>
+    </vehicle>
+    <vehicle id="489" depart="48.90" type="vehicle.ford.ambulance">
+        <route edges="-259 -19 -20 -21 4#1 4#0 3 2#1 2#0 1 9 -275 -274 -273 -262 -261 -260#0 -260#1 -260#2 -257 -256 -255 -30 -31 -32 -33 -35 -36 -37 -39"/>
+    </vehicle>
+    <vehicle id="491" depart="49.10" type="vehicle.lincoln.mkz_2020">
+        <route edges="-180#0 -180#1 -179 -102 -104 -107 -108#0 -108#1 -109 -111 -112#0 -112#1 -113 -114#0 -114#1 -369"/>
+    </vehicle>
+    <vehicle id="492" depart="49.20" type="vehicle.mini.cooper_s_2021">
+        <route edges="108#1 108#0 107 -98 -100 -191 -193#0 -193#1 -195 68 67 66 64 63 62 200 201 203 204 205#1"/>
+    </vehicle>
+    <vehicle id="493" depart="49.30" type="vehicle.ford.crown">
+        <route edges="72 71 70 68 67 66 64 63 62 200 201 -279 -280 280 279 -201 -200 60 58 56 -351 -339 -336"/>
+    </vehicle>
+    <vehicle id="494" depart="49.40" type="vehicle.vespa.zx125">
+        <route edges="204 205#1 205#0 206 223 222 221 220 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -168 -166 -165 -159 -161 -162 -163 -104 -98 -100 -191"/>
+    </vehicle>
+    <vehicle id="495" depart="49.50" type="vehicle.nissan.patrol_2021">
+        <route edges="-321 -324 228 -228 -220 -219 -218 -217 -216 -215 -203 -201 -200 -62 -63 -64 -66 -67 -68 -70 -71 -72 -74 -75 -76 -147"/>
+    </vehicle>
+    <vehicle id="496" depart="49.60" type="vehicle.dodge.charger_police_2020">
+        <route edges="-382 -386 -388 -195 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 -332 -327 -324"/>
+    </vehicle>
+    <vehicle id="497" depart="49.70" type="vehicle.mercedes.sprinter">
+        <route edges="75 74 91 94 96 -100 -102 -104 -107 -108#0 -108#1 -109 -111 -112#0"/>
+    </vehicle>
+    <vehicle id="498" depart="49.80" type="vehicle.volkswagen.t2_2021">
+        <route edges="-293 -130 -516 -120 109 108#1 108#0 107 -98 -96 -94 -91 -74 -75 -76 -78 -79 -80 -81 -82 -83 -84#0 -84#1 -85 -86 -87 -27 -28 -30 -31 -32 -33 -35"/>
+    </vehicle>
+    <vehicle id="499" depart="49.90" type="vehicle.carlamotors.firetruck">
+        <route edges="74 72 71 70 68 67 66 64 63 62 200 201 203 204 205#1 205#0 206 208 209 211#1 211#0 212 213#1 213#0 214 -214 -213#0 -213#1 -212 -211#0 -211#1 301 299 336"/>
+    </vehicle>
+</routes>

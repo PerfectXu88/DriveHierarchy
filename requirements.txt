@@ -1,0 +1,28 @@
+# DriveHierarchy open-loop inference requirements
+#
+# Usage:
+#   pip install -r requirements_open_loop.txt
+#
+# Notes:
+# - This file covers the standardized open-loop pipeline under `scripts/`.
+# - It does not include CARLA / SUMO / close-loop dependencies.
+# - `vllm` is only required for the vLLM backend.
+# - `peft` is only required for adapter / LoRA-style Transformers configs.
+
+# Common
+tqdm>=4.66.0
+Pillow>=10.0.0
+torch>=2.4.0
+transformers>=4.52.0
+accelerate>=1.0.0
+sentencepiece>=0.2.0
+safetensors>=0.4.0
+
+# Optional multimodal helpers
+qwen-vl-utils>=0.0.10
+
+# Optional: vLLM backend
+vllm>=0.8.0
+
+# Optional: Transformers adapter / LoRA loading
+peft>=0.13.0

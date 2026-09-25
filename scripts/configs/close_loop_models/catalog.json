@@ -1,0 +1,303 @@
+{
+  "models": {
+    "gemma_3_12b_it": {
+      "name": "gemma_3_12b_it",
+      "inference_config_file": "gemma_3_12b_it.json",
+      "runtime": {
+        "service_label": "Gemma 3 12B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 300,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "gemma_3_27b_it": {
+      "name": "gemma_3_27b_it",
+      "inference_config_file": "gemma_3_27b_it.json",
+      "runtime": {
+        "service_label": "Gemma 3 27B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "internvl3_5_2b": {
+      "name": "internvl3_5_2b",
+      "inference_config_file": "internvl3_5_2b.json",
+      "runtime": {
+        "service_label": "InternVL3.5 2B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 300,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "internvl3_5_38b": {
+      "name": "internvl3_5_38b",
+      "inference_config_file": "internvl3_5_38b.json",
+      "runtime": {
+        "service_label": "InternVL3.5 38B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "internvl3_5_8b": {
+      "name": "internvl3_5_8b",
+      "inference_config_file": "internvl3_5_8b.json",
+      "runtime": {
+        "service_label": "InternVL3.5 8B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 300,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "internvl3_78b": {
+      "name": "internvl3_78b",
+      "inference_config_file": "internvl3_78b.json",
+      "runtime": {
+        "service_label": "InternVL3 78B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 600
+      }
+    },
+    "internvl3_78b_second": {
+      "name": "internvl3_78b_second",
+      "inference_config_file": "internvl3_78b_second.json",
+      "runtime": {
+        "service_label": "InternVL3 78B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "mini_internvl2_4b_da_drivelm": {
+      "name": "mini_internvl2_4b_da_drivelm",
+      "inference_config_file": "mini_internvl2_4b_da_drivelm.json",
+      "runtime": {
+        "service_label": "Mini-InternVL2-4B-DA-DriveLM service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "minicpm_v_4_5": {
+      "name": "minicpm_v_4_5",
+      "inference_config_file": "minicpm_v_4_5.json",
+      "runtime": {
+        "service_label": "MiniCPM-V-4.5 service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "pixtral_12b": {
+      "name": "pixtral_12b",
+      "inference_config_file": "pixtral_12b.json",
+      "runtime": {
+        "service_label": "Pixtral 12B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 300,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen2_5_vl_72b": {
+      "name": "qwen2_5_vl_72b",
+      "inference_config_file": "qwen2_5_vl_72b.json",
+      "runtime": {
+        "service_label": "Qwen2.5-VL 72B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 600
+      }
+    },
+    "qwen3_vl_2b": {
+      "name": "qwen3_vl_2b",
+      "inference_config_file": "qwen3_vl_2b.json",
+      "runtime": {
+        "service_label": "Qwen3-VL 2B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 300,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_32b": {
+      "name": "qwen3_vl_32b",
+      "inference_config_file": "qwen3_vl_32b.json",
+      "runtime": {
+        "service_label": "Qwen3-VL 32B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_8b": {
+      "name": "qwen3_vl_8b",
+      "inference_config_file": "qwen3_vl_8b.json",
+      "runtime": {
+        "service_label": "Qwen3-VL 8B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_8b_A1": {
+      "name": "qwen3_vl_8b_A1",
+      "model_dir_name": "Qwen3-VL-8B-A1",
+      "inference_config_file": "qwen3_vl_8b_A1.json",
+      "runtime": {
+        "service_label": "Qwen3-VL LoRA service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_8b_A4": {
+      "name": "qwen3_vl_8b_A4",
+      "model_dir_name": "Qwen3-VL-8B-A4",
+      "inference_config_file": "qwen3_vl_8b_A4.json",
+      "runtime": {
+        "service_label": "Qwen3-VL LoRA service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_8b_B3": {
+      "name": "qwen3_vl_8b_B3",
+      "model_dir_name": "Qwen3-VL-8B-B3",
+      "inference_config_file": "qwen3_vl_8b_B3.json",
+      "runtime": {
+        "service_label": "Qwen3-VL LoRA service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_8b_C1": {
+      "name": "qwen3_vl_8b_C1",
+      "model_dir_name": "Qwen3-VL-8B-C1",
+      "inference_config_file": "qwen3_vl_8b_C1.json",
+      "runtime": {
+        "service_label": "Qwen3-VL LoRA service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen3_vl_8b_D1": {
+      "name": "qwen3_vl_8b_D1",
+      "model_dir_name": "Qwen3-VL-8B-D1",
+      "inference_config_file": "qwen3_vl_8b_D1.json",
+      "runtime": {
+        "service_label": "Qwen3-VL LoRA service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "qwen_2_5_vl_7b_drivelm": {
+      "name": "qwen_2_5_vl_7b_drivelm",
+      "inference_config_file": "qwen_2_5_vl_7b_drivelm.json",
+      "runtime": {
+        "service_label": "Qwen2.5-VL-7B-DriveLM service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    },
+    "zwz_8b": {
+      "name": "zwz_8b",
+      "inference_config_file": "zwz_8b.json",
+      "runtime": {
+        "service_label": "ZwZ-8B service",
+        "service_conda_env": null,
+        "carla_port": 2000,
+        "vlm_visible_devices": "",
+        "runtime_gpu_id": null,
+        "pin_single_visible_device_from_current_cuda_visible_devices": false,
+        "carla_start_wait_seconds": 120,
+        "vlm_start_wait_seconds": 300
+      }
+    }
+  }
+}
