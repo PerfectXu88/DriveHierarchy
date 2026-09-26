@@ -9,11 +9,10 @@
 <p><strong>🎉DriveHierarchy is accpeted by NeurIPS 2026!</strong></p>
 
 <p>
-  Chengkai Xu<sup>1,</sup> &nbsp; Jiaqi Liu<sup>2,</sup> &nbsp; Yicheng Guo<sup>1,</sup> &nbsp; Peng Hang<sup>1</sup> &nbsp; Jian Sun<sup>1,†</sup>
+  Chengkai Xu<sup>1,</sup> &nbsp; Jiaqi Liu<sup>2,</sup> &nbsp; Yicheng Guo<sup>1,</sup> &nbsp; Peng Hang<sup>1</sup> &nbsp; Jian Sun<sup>1</sup>
 </p>
 <p>
   <sup>1</sup> Tongji University &nbsp;&nbsp; <sup>2</sup> UNC Chapel Hill<br>
-  <sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding author
 </p>
 
 <p>
@@ -266,7 +265,5 @@ DriveHierarchy supports non-commercial research on capability measurement, contr
 - **Original annotations, scenario descriptions, and documentation:** CC BY-NC-SA 4.0.
 - **DriveHierarchy-authored source code:** Apache-2.0, unless otherwise stated.
 - **Third-party and derived material:** subject to the original source terms, including nuScenes/nuPlan, NAVSIM, Wayve LingoQA, HRI DRAMA, CARLA, SUMO, WOMD-Reasoning, and the Waymo Open Motion Dataset.
-
-**Research benchmark only.** R4 is evaluated in simulation. Benchmark scores do not certify real-world driving safety, reliability, legal compliance, or deployment readiness, and do not replace on-road validation, safety engineering, regulatory assessment, or qualified human oversight.
 
 <p align="center"><a href="#top">Back to top ↑</a></p>
