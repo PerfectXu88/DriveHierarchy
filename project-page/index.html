@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12202a">
+  <title>DriveHierarchy — From Understanding to Execution · NeurIPS 2026</title>
+  <meta name="description" content="A benchmark for diagnosing VLM driving capabilities across perception, memory, reasoning, and closed-loop execution. NeurIPS 2026. Explore 14 tasks, 100 scenarios, and a no-code scenario editor.">
+  <meta property="og:title" content="DriveHierarchy · NeurIPS 2026">
+  <meta property="og:description" content="Understand what a driving VLM can do, where it fails, and what to improve.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://PerfectXu88.github.io/DriveHierarchy/assets/scenario-4.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="assets/scenario-4.webp">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="DriveHierarchy home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 25 12 7h8l9 18M8 18h16M16 8v4m0 5v4m0 5v3"/></svg><span>Drive<span class="brand-light">Hierarchy</span></span></a>
+  <button class="menu-toggle" aria-controls="navigation" aria-expanded="false">Menu <span>＋</span></button>
+  <nav id="navigation" aria-label="Main navigation">
+    <a href="#overview">Overview</a><a href="#hierarchy">Benchmark</a><a href="#editor">Scenario editor</a><a href="#results">Results</a><a href="#citation">Citation</a>
+    <a class="nav-code" href="https://github.com/PerfectXu88/DriveHierarchy">GitHub ↗</a>
+  </nav>
+</header>
+<main id="main">
+<div class="hero-scroll">
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <img class="hero-image" src="assets/scenario-4.webp" alt="A driving scenario in the DriveHierarchy simulator, with the ego vehicle approaching an urban intersection." width="1280" height="720" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-content wrap">
+    <div class="venue"><span class="status-dot"></span> NEURIPS 2026 <span class="venue-sep">/</span> ACCEPTED</div>
+    <p class="eyebrow hero-eyebrow">SEE THE CAPABILITY. UNDERSTAND THE DRIVE.</p>
+    <h1 id="hero-title">Drive<span>Hierarchy</span><span class="title-period">.</span></h1>
+    <p class="paper-title">A Benchmark for Diagnosing VLM Driving Capabilities<br class="desktop-break"> from Open-Loop Understanding to Closed-Loop Execution</p>
+    <div class="authors"><span>Chengkai Xu<sup>1</sup></span><span>Jiaqi Liu<sup>2</sup></span><span>Yicheng Guo<sup>1</sup></span><span>Peng Hang<sup>1</sup></span><span>Jian Sun<sup>1</sup></span></div>
+    <p class="affiliations"><span><sup>1</sup> Tongji University</span><span><sup>2</sup> UNC Chapel Hill</span></p>
+    <div class="hero-actions">
+      <a class="button button-accent" href="assets/DriveHierarchy-paper.pdf">Read the paper <span>↗</span></a>
+      <a class="button button-glass" href="https://github.com/PerfectXu88/DriveHierarchy">Explore code <span>↗</span></a>
+      <a class="button button-glass" href="https://huggingface.co/datasets/anonymous-2FD5/DriveHierarchy">Get the dataset <span>↗</span></a>
+    </div>
+  </div>
+  <div class="hero-bottom wrap"><a href="#overview">DISCOVER THE BENCHMARK <span>↓</span></a><span>OPEN-LOOP UNDERSTANDING → CLOSED-LOOP EXECUTION</span></div>
+</section>
+</div>
+
+<section class="section wrap" id="overview">
+  <div class="section-kicker"><span>01 / OVERVIEW</span><span>BEYOND A SINGLE SCORE</span></div>
+  <div class="intro-grid"><h2>What does it take<br>to <em>understand the drive?</em></h2><div><p class="lead">Driving intelligence is more than one ability. Its evaluation should be, too.</p><p>DriveHierarchy connects perceptual grounding, contextual memory, and mental reasoning to closed-loop driving. It reveals where VLMs succeed, where they struggle, and which capabilities offer targets for improvement.</p></div></div>
+  <div class="stats" aria-label="Benchmark scale">
+    <div><strong>4</strong><span>Capability ranks</span></div><div><strong>76,798</strong><span>Full-corpus QA pairs</span></div><div><strong>84,279</strong><span>Full-corpus frames</span></div><div><strong>100</strong><span>Closed-loop scenarios</span></div><div><strong>15</strong><span>VLMs evaluated</span></div>
+  </div>
+  <p class="fine-print">Paper evaluation: 14,000 open-loop records across 14 tasks, with 1,000 records per task. Full-corpus statistics are shown above.</p>
+  <figure class="paper-figure"><a href="assets/framework.webp" class="zoomable" data-caption="DriveHierarchy: benchmark construction, four capability ranks, and diagnostic outputs."><img src="assets/framework.webp" loading="lazy" width="1800" height="1149" alt="Framework overview showing dataset construction, R1–R4 capability ranks, and diagnostic outputs."><span class="zoom-hint">View full figure ↗</span></a><figcaption><span>FIG. 01</span> A unified framework for capability diagnosis and benchmark-guided improvement.</figcaption></figure>
+  <details class="abstract"><summary>Read the research abstract <span>＋</span></summary><p>Evaluating VLM-based autonomous driving remains difficult because driving competence is composite: a capable system must ground traffic participants and hazards, integrate context across views and time, reason about future evolution, and act appropriately under closed-loop interaction. DriveHierarchy organizes these capabilities into four ranks. It integrates multiple open-source autonomous-driving datasets into a unified open-loop benchmark and provides a closed-loop simulation platform with interactive scenario construction on a real-world road network. Experiments on 15 VLMs reveal structured but non-redundant capability variation, connect open-loop understanding to closed-loop driving, and support targeted diagnosis and benchmark-guided optimization.</p><p class="fine-print">Condensed from the paper abstract.</p></details>
+</section>
+
+<section class="section section-tinted" id="hierarchy">
+ <div class="wrap">
+  <div class="section-kicker"><span>02 / THE CAPABILITY HIERARCHY</span><span>UNDERSTANDING → ACTION</span></div>
+  <div class="section-heading"><h2>Four ranks.<br><em>One connected picture.</em></h2><p>Explore the abilities behind driving behavior.<br>Select a rank to see what it measures.</p></div>
+  <div class="rank-tabs" role="tablist" aria-label="Capability ranks">
+    <button role="tab" id="tab-r1" aria-controls="rank-panel" aria-selected="true" data-rank="0"><span>R1 <i>↗</i></span><strong>Perceptual<br>Grounding</strong><small>Observe the present</small></button>
+    <button role="tab" id="tab-r2" aria-controls="rank-panel" aria-selected="false" tabindex="-1" data-rank="1"><span>R2 <i>↗</i></span><strong>Contextual<br>Memory</strong><small>Connect the context</small></button>
+    <button role="tab" id="tab-r3" aria-controls="rank-panel" aria-selected="false" tabindex="-1" data-rank="2"><span>R3 <i>↗</i></span><strong>Mental<br>Reasoning</strong><small>Anticipate what follows</small></button>
+    <button role="tab" id="tab-r4" aria-controls="rank-panel" aria-selected="false" tabindex="-1" data-rank="3"><span>R4 <i>↗</i></span><strong>Closed-Loop<br>Execution</strong><small>Act through interaction</small></button>
+  </div>
+  <div class="rank-panel" id="rank-panel" role="tabpanel" aria-labelledby="tab-r1" tabindex="0">
+    <div class="rank-visual"><img id="rank-image" src="assets/perception.webp" loading="lazy" alt="Front camera observation from the paper's open-loop examples." width="1600" height="900"><span id="rank-image-label">OPEN-LOOP / VISUAL OBSERVATION</span></div>
+    <div class="rank-description"><span class="eyebrow" id="rank-meta">R1 · 8 OPEN-LOOP TASKS</span><h3 id="rank-title">Ground the scene.</h3><p id="rank-description">Recognize traffic participants and hazards, estimate distances, localize referred objects, and describe the current traffic situation.</p><ul class="task-list" id="rank-tasks"><li>Object existence, counting, and attributes</li><li>Nearest-object, referred-object, and bucketed distances</li><li>Visual grounding and situation description</li></ul><a id="rank-link" class="text-link" href="https://github.com/PerfectXu88/DriveHierarchy/tree/main/Open_Loop_Evaluation">Explore task records <span>↗</span></a></div>
+  </div>
+ </div>
+</section>
+
+<section class="section editor-section" id="editor">
+ <div class="wrap">
+  <div class="section-kicker"><span>03 / INTERACTIVE SCENARIO EDITOR</span><span class="pill">NO PROGRAMMING REQUIRED</span></div>
+  <div class="section-heading"><h2>Your scenario.<br><em>Your design.</em></h2><p>Turn a driving question into a custom scenario.<br>Visually configure actors, trajectories, and conditions without writing scenario scripts.</p></div>
+  <div class="editor-grid">
+    <figure class="editor-figure"><a class="zoomable" href="assets/platform.webp" data-caption="DriveHierarchy R4 platform: interactive scenario construction, CARLA–SUMO co-simulation, and closed-loop evaluation."><img src="assets/platform.webp" alt="DriveHierarchy R4 platform diagram showing the interactive scenario editor, CARLA–SUMO co-simulation engine, performance evaluation, and replay analysis." loading="lazy" width="1800" height="853"><span class="zoom-hint">View full platform ↗</span></a><figcaption>From custom scenario design to closed-loop evaluation · R4 platform overview</figcaption></figure>
+    <div class="editor-features"><article><span>01</span><div><h3>Set the starting point</h3><p>Initialize the ego vehicle's placement and state.</p></div></article><article><span>02</span><div><h3>Shape the interaction</h3><p>Place vehicles, pedestrians, and other dynamic actors around the ego vehicle.</p></div></article><article><span>03</span><div><h3>Design the movement</h3><p>Edit actor trajectories to create merging, yielding, and crossing interactions.</p></div></article><article><span>04</span><div><h3>Change the conditions</h3><p>Configure weather and refine the scene around your research question.</p></div></article></div>
+  </div>
+  <div class="engine-strip"><span>DESIGN</span><b>→</b><span>CARLA + SUMO</span><b>→</b><span>EVALUATE</span><b>→</b><span>REPLAY & ANALYZE</span></div>
+  <div class="editor-bottom"><p>CARLA supplies rendering, vehicle physics, and sensor simulation.<br>SUMO coordinates background traffic. Logs and replay help you investigate failures.</p><a class="button button-glass" href="https://github.com/PerfectXu88/DriveHierarchy/blob/main/docs/evaluation.md#closed-loop-evaluation">Simulation setup <span>↗</span></a></div>
+  <div class="editor-interface">
+    <div class="editor-interface-heading"><span class="eyebrow">INSIDE THE EDITOR</span><h3>Design directly on the road network.</h3><p>The actual visual interface for configuring your driving scenarios.</p></div>
+    <figure class="editor-interface-figure"><a class="zoomable" href="assets/editor.webp" data-caption="The DriveHierarchy scenario editor. Screenshot from the paper; the full editor runs with the simulation platform."><img src="assets/editor.webp" loading="lazy" alt="Screenshot of the visual scenario editor showing a road network and actor placement tools." width="1800" height="1179"><span class="zoom-hint">Explore the interface ↗</span></a><figcaption>Actual editor interface · from the paper</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="section wrap" id="scenarios">
+  <div class="section-kicker"><span>04 / SCENARIO EXPLORER</span><span>100 SCENARIOS · 10 FAMILIES</span></div>
+  <div class="section-heading"><h2>A world of<br><em>driving interactions.</em></h2><p>Built on a real-world road layout.<br>Curated to challenge interactive execution.</p></div>
+  <div class="scenario-controls"><label for="scenario-select">Explore a scenario family</label><select id="scenario-select"><option value="0">01 — Pedestrian encounters</option><option value="1">02 — Obstacle avoidance</option><option value="2">03 — Turning maneuver</option><option value="3">04 — Intersection</option><option value="4">05 — T-intersection</option><option value="5">06 — Traffic disturbances</option><option value="6">07 — Sudden braking</option><option value="7">08 — Merging</option><option value="8">09 — Yielding</option><option value="9">10 — Roundabout navigation</option></select><div class="arrow-controls"><button id="scenario-prev" aria-label="Previous scenario family">←</button><button id="scenario-next" aria-label="Next scenario family">→</button></div></div>
+  <figure class="scenario-stage"><a id="scenario-zoom" class="zoomable" href="assets/scenario-1.webp" data-caption="Pedestrian encounters: a representative simulation scene from the paper."><img id="scenario-image" src="assets/scenario-1.webp" loading="lazy" alt="Simulation example of a pedestrian encounter." width="1280" height="720"><span class="zoom-hint">Enlarge scene ↗</span></a><figcaption aria-live="polite"><span id="scenario-number">01 / 10</span><div><h3 id="scenario-title">Pedestrian encounters</h3><p id="scenario-description">Detect crossing intent, decelerate in time, yield when required, and resume only after the conflict region is clear.</p></div><span class="scene-tag">R4 · SIMULATION</span></figcaption></figure>
+  <details class="abstract"><summary>Explore the test-site scenario map <span>＋</span></summary><a class="zoomable" href="assets/scenario-map.webp" data-caption="Representative scenario distribution across the test-site road layout."><img src="assets/scenario-map.webp" alt="Scenario types distributed across the real-world road layout used in simulation." loading="lazy" width="1800" height="1242"></a></details>
+</section>
+
+<section class="section section-tinted" id="results">
+ <div class="wrap">
+  <div class="section-kicker"><span>05 / EXPERIMENTAL RESULTS</span><span>15 OPEN-SOURCE VLMS</span></div>
+  <div class="section-heading"><h2>Different strengths.<br><em>Measurable differences.</em></h2><p>Generalist and driving-specialized models,<br>evaluated across understanding and execution.</p></div>
+  <div class="results-tools"><div class="segmented" role="group" aria-label="Results ordering"><button data-metric="open" aria-pressed="true">Open-loop R1–R3</button><button data-metric="closed" aria-pressed="false">Closed-loop R4</button></div><label class="search-label"><span class="sr-only">Search models</span><input id="model-search" type="search" placeholder="Search a model…" autocomplete="off"></label></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Model results table"><table class="results-table"><caption id="result-caption">Paper results · sorted by open-loop score · higher is better</caption><thead><tr><th scope="col">Rank</th><th scope="col">Model</th><th scope="col">Parameters</th><th scope="col">Open-loop score ↑</th><th scope="col">Closed-loop score ↑</th></tr></thead><tbody id="results-body"></tbody></table></div><p class="fine-print" id="result-count" aria-live="polite">15 models · Tables 1 & 2 in the paper. The two scores use different evaluation protocols and should not be compared numerically across columns.</p><noscript><p>Enable JavaScript for the searchable comparison, or <a href="assets/DriveHierarchy-paper.pdf">read Tables 1 and 2 in the paper</a>.</p></noscript>
+  <div class="profiles-grid"><div><span class="eyebrow">CAPABILITY PROFILES</span><h3>A score tells you how much.<br>A profile shows you where.</h3><p>Compare task-level strengths within a model family or across similarly sized models.</p><div class="profile-buttons" role="group" aria-label="Capability profile figures"><button data-profile="midscale" aria-pressed="true">8B–12B models <span>↗</span></button><button data-profile="qwen" aria-pressed="false">Qwen series <span>↗</span></button><button data-profile="internvl" aria-pressed="false">InternVL series <span>↗</span></button></div><p class="fine-print">Figure labels R2-1-A/B/C correspond to repository tasks R2_1, R2_2_A, and R2_2_B. These profiles cover R1–R3.</p></div><figure><a id="profile-zoom" href="assets/radar-midscale.webp" class="zoomable" data-caption="Capability profiles of representative 8B–12B models."><img id="profile-image" src="assets/radar-midscale.webp" alt="Radar plot comparing open-loop capabilities of representative 8B–12B VLMs." loading="lazy" width="1731" height="1800"><span class="zoom-hint">View full figure ↗</span></a></figure></div>
+ </div>
+</section>
+
+<section class="section wrap" id="diagnosis">
+ <div class="section-kicker"><span>06 / FROM DIAGNOSIS TO IMPROVEMENT</span><span>BENCHMARK-GUIDED FINE-TUNING</span></div>
+ <div class="improvement-grid"><div><h2>Find the weakness.<br><em>Improve the drive.</em></h2><p class="lead">Open-loop capability supervision can transfer to closed-loop behavior.</p><p>In a Qwen3-VL-8B-Instruct case study, jointly fine-tuning on the identified weak capability groups raises the average R4 score from <strong>0.902 to 8.021</strong>. R4 was never a supervision target.</p><div class="gain"><strong>+7.119</strong><span>R4 score improvement<br>in the joint intervention</span></div><p class="fine-print">One base model, under the paper's protocol. Table 4 reports the closed-loop transfer study.</p></div><div class="bar-chart" role="img" aria-label="Average R4 scores: baseline 0.902; selected R1 targets 4.943; selected R2 targets 5.171; R3 outcome prediction 4.595; joint weak-set targets 8.021."><div class="chart-heading"><span>AVERAGE R4 SCORE</span><span>HIGHER IS BETTER ↑</span></div><div class="bar-row"><div><span>Baseline</span><strong>0.902</strong></div><div class="bar-track"><span style="width:11.25%"></span></div></div><div class="bar-row"><div><span>Selected R1 targets</span><strong>4.943</strong></div><div class="bar-track"><span style="width:61.63%"></span></div></div><div class="bar-row"><div><span>Selected R2 targets</span><strong>5.171</strong></div><div class="bar-track"><span style="width:64.47%"></span></div></div><div class="bar-row"><div><span>R3 outcome prediction</span><strong>4.595</strong></div><div class="bar-track"><span style="width:57.29%"></span></div></div><div class="bar-row bar-highlight"><div><span>Joint weak-set targets</span><strong>8.021</strong></div><div class="bar-track"><span style="width:100%"></span></div></div></div></div>
+ <div class="correlation-strip"><div><span>OPEN-LOOP ↔ CLOSED-LOOP</span><h3>Related, yet not interchangeable.</h3><p>Spearman correlations with R4 across the evaluated models.</p></div><div><strong>0.664</strong><span>R1 ↔ R4</span></div><div><strong>0.596</strong><span>R2 ↔ R4</span></div><div><strong>0.418</strong><span>R3 ↔ R4</span></div></div>
+</section>
+
+<section class="section citation-section" id="citation"><div class="wrap">
+ <div class="section-kicker"><span>07 / BUILD ON DRIVEHIERARCHY</span><span>RESOURCES & CITATION</span></div>
+ <div class="section-heading"><h2>Your next driving<br><em>research starts here.</em></h2><a class="button button-accent" href="https://github.com/PerfectXu88/DriveHierarchy">Get started on GitHub <span>↗</span></a></div>
+ <div class="resource-grid"><a href="assets/DriveHierarchy-paper.pdf"><span>01 / PAPER</span><strong>Read the research</strong><span>Manuscript PDF · 41 MB ↗</span></a><a href="https://huggingface.co/datasets/anonymous-2FD5/DriveHierarchy"><span>02 / DATA</span><strong>Explore the benchmark</strong><span>Data & simulator assets ↗</span></a><a href="https://github.com/PerfectXu88/DriveHierarchy/blob/main/docs/evaluation.md"><span>03 / EVALUATION</span><strong>Evaluate your model</strong><span>Setup, inference & scoring ↗</span></a></div>
+ <div class="citation-box"><div><span>BIBTEX</span><button id="copy-citation" type="button">Copy citation <span>⧉</span></button></div><pre><code id="bibtex">@inproceedings{xu2026drivehierarchy,
+  title     = {{DriveHierarchy}: A Benchmark for Diagnosing {VLM} Driving
+               Capabilities from Open-Loop Understanding to Closed-Loop Execution},
+  author    = {Xu, Chengkai and Liu, Jiaqi and Guo, Yicheng and Hang, Peng and Sun, Jian},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://github.com/PerfectXu88/DriveHierarchy}
+}</code></pre><p id="copy-status" role="status" aria-live="polite"></p></div>
+ <p class="fine-print">Citation based on the accepted manuscript; final proceedings metadata can be added when available.</p>
+</div></section>
+</main>
+<footer class="wrap"><div class="footer-top"><a class="brand" href="#home">Drive<span class="brand-light">Hierarchy</span><span class="orange">.</span></a><span>Tongji University · UNC Chapel Hill</span><a href="#home">Back to top ↑</a></div><div class="footer-bottom"><p>Research benchmark only. Closed-loop evaluation is performed in simulation and does not certify real-world driving safety or deployment readiness.</p><p>Original documentation & data: CC BY-NC-SA 4.0.<br>Code: Apache-2.0. Third-party material retains its original terms. <a href="https://github.com/PerfectXu88/DriveHierarchy/blob/main/LICENSE">License ↗</a></p></div></footer>
+<dialog id="figure-dialog" aria-label="Expanded research figure"><button class="dialog-close" aria-label="Close expanded figure">Close ✕</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
+</body>
+</html>

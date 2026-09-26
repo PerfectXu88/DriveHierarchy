@@ -1,0 +1,35 @@
+name: Deploy DriveHierarchy project page
+
+# Publishing is an explicit manual action, not a side effect of a code push.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: drivehierarchy-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out website files
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: project-page
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: project-page
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
