@@ -1,211 +1,207 @@
-# 🚗 DriveHierarchy
+<a id="top"></a>
 
-DriveHierarchy is a hierarchical benchmark for evaluating vision-language models in autonomous driving. The benchmark organizes capability assessment into four ranks:
+<div align="center">
 
-- `R1` Perceptual Grounding
-- `R2` Contextual Memory
-- `R3` Mental Reasoning
-- `R4` Closed-loop Execution
+<h1>🚗 DriveHierarchy</h1>
 
-> [!WARNING]
-> **Research benchmark only — not a safety certification.** A high DriveHierarchy
-> score, including a high `R4` closed-loop score, must not be interpreted as
-> evidence that a model is safe, reliable, legally compliant, or ready for
-> deployment in a real vehicle. `R4` is evaluated in simulation and does not
-> establish real-world driving capability. Do not use benchmark scores as a
-> deployment-safety indicator or as a substitute for on-road validation,
-> safety engineering, regulatory review, or human oversight.
+<h3>A Benchmark for Diagnosing VLM Driving Capabilities<br>from Open-Loop Understanding to Closed-Loop Execution</h3>
 
-The repository contains a standardized open-loop evaluation pipeline, a closed-loop simulation pipeline, model configuration management, and unified scoring scripts.
+<p><strong>🎉DriveHierarchy is accpeted by NeurIPS 2026!</strong></p>
 
-## Overview
+<p>
+  Chengkai Xu<sup>1,</sup> &nbsp; Jiaqi Liu<sup>2,</sup> &nbsp; Yicheng Guo<sup>1,</sup> &nbsp; Peng Hang<sup>1</sup> &nbsp; Jian Sun<sup>1,†</sup>
+</p>
+<p>
+  <sup>1</sup> Tongji University &nbsp;&nbsp; <sup>2</sup> UNC Chapel Hill<br>
+  <sup>*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding author
+</p>
 
-DriveHierarchy is designed to evaluate both static understanding and embodied driving behavior:
+<p>
+  <a href="assest/DriveHierarchyNeurIPS.pdf"><img src="https://img.shields.io/badge/Paper-PDF-B45B42?style=flat-square" alt="Read the paper PDF"></a>
+  <a href="https://huggingface.co/datasets/anonymous-2FD5/DriveHierarchy"><img src="https://img.shields.io/badge/🤗%20Dataset-Hugging%20Face-E6B94D?style=flat-square" alt="Dataset on Hugging Face"></a>
+  <a href="docs/evaluation.md"><img src="https://img.shields.io/badge/Evaluation-Get%20Started-48799B?style=flat-square" alt="Evaluation guide"></a>
+  <a href="#citation"><img src="https://img.shields.io/badge/Cite-BibTeX-758558?style=flat-square" alt="Cite DriveHierarchy"></a>
+</p>
 
-- The paper evaluation protocol covers `R1` to `R3` with 14 open-loop tasks (14,000 records).
-- Closed-loop evaluation covers `R4` with interactive simulator scenarios under [Close_Loop_Evaluation/Scenario_Onsite](Close_Loop_Evaluation/Scenario_Onsite).
-- The public repository excludes heavyweight closed-loop assets under `Close_Loop_Evaluation/Carla_Simulation/CarlaUE4` and `Close_Loop_Evaluation/Carla_Simulation/HDMaps`. These two directories must be obtained separately and restored to the same paths before running closed-loop evaluation.
-- Unified runner scripts are placed under [scripts](scripts).
+<p><strong>Understand what a driving VLM can do, where it fails, and what to improve.</strong></p>
 
-## 📁 Repository Layout
+<p>
+  <a href="#highlights">✨ Highlights</a> ·
+  <a href="#benchmark">📊 Benchmark</a> ·
+  <a href="#scenario-editor">🎨 Scenario Editor</a> ·
+  <a href="#key-findings">🔍 Key Findings</a> ·
+  <a href="#quick-start">🚀 Quick Start</a> ·
+  <a href="#resources">📚 Resources</a> ·
+  <a href="#citation">📝 Citation</a>
+</p>
 
-```text
-DriveHierarchy/
-├── Open_Loop_Evaluation/          # Open-loop benchmark JSONL files
-├── Close_Loop_Evaluation/
-│   ├── Carla_Simulation/          # CARLA + SUMO simulation code; `CarlaUE4/` and `HDMaps/` are distributed separately
-│   ├── Scenario_Onsite/           # Closed-loop scenario JSON files
-│   ├── VLM_Service/               # Standalone VLM inference service used in closed-loop mode
-│   └── requirements.txt           # Closed-loop Python dependencies
-├── scripts/
-│   ├── run_open_loop.sh
-│   ├── run_close_loop.sh
-│   ├── score_open_loop.sh
-│   ├── score_close_loop.sh
-│   ├── score_vlm_total_entry.py
-│   ├── close_loop_eval_cli.py
-│   └── configs/                   # Model presets, dataset catalogs, inference configs
-├── result/                        # Default output directory
-└── requirements.txt
-```
+</div>
 
-## 📊 Benchmark Data
+<p align="center">
+  <a href="assest/Fig_framework.png">
+    <img src="assest/Fig_framework.png" width="100%" alt="DriveHierarchy overview: benchmark construction and four capability ranks, from perceptual grounding through contextual memory and mental reasoning to closed-loop execution, supporting diagnosis and targeted improvement.">
+  </a>
+</p>
+<p align="center"><em>Four capability ranks connect open-loop understanding to interactive driving evaluation.</em></p>
 
-### Open-loop tasks
+<a id="highlights"></a>
 
-The active evaluation catalog is [scripts/configs/datasets/open_loop_all.json](scripts/configs/datasets/open_loop_all.json). It reproduces the 14-task paper protocol:
+## ✨ Highlights
 
-- `R1_1_A_Existence`
-- `R1_1_B_Counting`
-- `R1_1_C_State_Attribute`
-- `R1_2_A_Nearest_Object`
-- `R1_2_B_Certain_Object`
-- `R1_2_C_Distance_Bucket`
-- `R1_3_Location_Questions`
-- `R1_4_Situation_Description`
-- `R2_1_Multi_view_Memory`
-- `R2_2_A_Temporal_Counting`
-- `R2_2_B_Temporal_Status_Recognition`
-- `R2_3_Spatial_Relations`
-- `R3_1_Outcome_Prediction`
-- `R3_2_Sequential_Planning`
+**DriveHierarchy** is a hierarchical benchmark for diagnosing vision-language models (VLMs) in autonomous driving. It connects fine-grained open-loop assessment with closed-loop simulation to reveal capability strengths, weaknesses, and their relationship to driving behavior.
 
-Each task is stored under [Open_Loop_Evaluation](Open_Loop_Evaluation) as one `.jsonl` file. The matching Hugging Face release also provides `open_loop_records.jsonl`, a unified 15,000-record view with a `task_name` field.
+- 🧩 **Diagnose across four ranks.** Evaluate perceptual grounding, contextual memory, mental reasoning, and closed-loop execution within one capability hierarchy.
+- 🎨 **Build your own scenarios, no coding required.** Use the [interactive scenario editor](#scenario-editor) to visually customize ego initialization, surrounding traffic, trajectories, and weather. Design driving interactions around your own research questions without writing scenario scripts.
+- 🔗 **Connect understanding to action.** Pair 14 open-loop tasks with 100 interactive scenarios in a CARLA–SUMO co-simulation platform built on a real-world road layout.
+- 🎯 **Turn diagnosis into targeted improvement.** Experiments on 15 VLMs and a benchmark-guided fine-tuning case study examine how improvements in open-loop capabilities transfer to closed-loop driving.
+- ⚙️ **Run a unified evaluation workflow.** Use model presets, vLLM or Transformers inference, and standardized scoring scripts for reproducible comparisons.
 
-### Closed-loop scenarios
+| Capability ranks | Full-corpus QA pairs | Full-corpus frames | Closed-loop scenarios | VLMs studied |
+| :--------------: | :------------------: | :----------------: | :-------------------: | :----------: |
+|   **4**   |   **76,798**   |  **84,279**  |     **100**     | **15** |
 
-The default scenario root is [Close_Loop_Evaluation/Scenario_Onsite](Close_Loop_Evaluation/Scenario_Onsite). It contains 100 curated simulator scenarios. The current layout is:
+The corpus statistics describe the full benchmark in the [paper](assest/DriveHierarchyNeurIPS.pdf). Reported open-loop results use a refined **14,000-record evaluation set**, with **1,000 records per task**, as specified by the [active dataset catalog](scripts/configs/datasets/open_loop_all.json).
 
-- scenario category directory, for example `07_sudden_brake`
-- scenario instance directory, for example `SC20260323153401DBRL`
-- JSON assets required for execution, including `entity.json` and `entity_sumo.json`
+<a id="benchmark"></a>
 
-## 📦 External Assets
+## 📊 Benchmark
 
-To keep the public Git repository lightweight, the following heavyweight directories are not tracked in Git:
+| Rank         | Capability                         | What does it test?                                                                                    | Evaluation                   |
+| :----------- | :--------------------------------- | :---------------------------------------------------------------------------------------------------- | :--------------------------- |
+| **R1** | 👁️**Perceptual Grounding** | Recognize objects and hazards, estimate distances, localize targets, and describe traffic situations. | 8 open-loop tasks            |
+| **R2** | 🧠**Contextual Memory**      | Integrate information across camera views, temporal sequences, and spatial relationships.             | 4 open-loop tasks            |
+| **R3** | 💡**Mental Reasoning**       | Predict future outcomes and recover the temporal order of driving observations.                       | 2 open-loop tasks            |
+| **R4** | 🚗**Closed-Loop Execution**  | Act under continuous traffic interaction in CARLA–SUMO simulation.                                   | 100 scenarios · 10 families |
 
-- `Close_Loop_Evaluation/Carla_Simulation/CarlaUE4`
-- `Close_Loop_Evaluation/Carla_Simulation/HDMaps`
+<details>
+<summary><strong>📋 Explore all 14 open-loop tasks</strong></summary>
 
-These assets are required for closed-loop evaluation and must be restored locally at the exact same paths. You can download them from [here](https://huggingface.co/datasets/anonymous-2FD5/DriveHierarchy).
+| Rank | Task ID    | Task                                  |
+| :--- | :--------- | :------------------------------------ |
+| R1   | `R1_1_A` | Object existence                      |
+| R1   | `R1_1_B` | Object counting                       |
+| R1   | `R1_1_C` | State and attribute recognition       |
+| R1   | `R1_2_A` | Nearest-object distance               |
+| R1   | `R1_2_B` | Referred-object distance              |
+| R1   | `R1_2_C` | Distance-bucket estimation            |
+| R1   | `R1_3`   | Visual grounding / location questions |
+| R1   | `R1_4`   | Situation description                 |
+| R2   | `R2_1`   | Multi-view memory                     |
+| R2   | `R2_2_A` | Temporal counting                     |
+| R2   | `R2_2_B` | Temporal status recognition           |
+| R2   | `R2_3`   | Spatial relationships                 |
+| R3   | `R3_1`   | Outcome prediction                    |
+| R3   | `R3_2`   | Sequential planning                   |
 
-```text
-DriveHierarchy/
-└── Close_Loop_Evaluation/
-    └── Carla_Simulation/
-        ├── CarlaUE4/
-        └── HDMaps/
-```
+Task files and their full names are available in [Open_Loop_Evaluation](Open_Loop_Evaluation).
 
-After extraction, the two restored directories should be:
+</details>
 
-- `Close_Loop_Evaluation/Carla_Simulation/CarlaUE4`
-- `Close_Loop_Evaluation/Carla_Simulation/HDMaps`
+<details>
+<summary><strong>🛣️ Explore the 10 closed-loop scenario families</strong></summary>
 
-The open-loop benchmark and the closed-loop orchestration code remain fully available in this repository. Only the heavyweight runtime assets are excluded from version control.
+Pedestrian encounters · Obstacle avoidance · Right turns · Intersections · T-intersections · Traffic flow · Sudden braking · Merging in and out · Yielding at intersections · Roundabouts.
 
-## 🛠️ Environment Preparation
+Each scenario includes `entity.json` and `entity_sumo.json` under [Scenario_Onsite](Close_Loop_Evaluation/Scenario_Onsite). Closed-loop scoring combines route completion, safety, and efficiency; see the paper for the metric definition.
 
-### General
+</details>
 
-- Python 3.10+ is recommended.
-- Run all commands from the repository root.
-- A practical setup is to use separate Conda environments for open-loop and closed-loop evaluation.
+<a id="scenario-editor"></a>
 
-### Open-loop evaluation
+## 🎨 Interactive Scenario Editor
 
-Open-loop inference supports two backends:
+**Your scenario, your design — no programming required.** DriveHierarchy includes a visual, interactive editor for creating custom driving scenarios. Configure the scene and its participants through the interface, from the ego vehicle's starting state to surrounding traffic and their trajectories.
 
-- `vllm`
-- `transformers`
+<p align="center">
+  <a href="assest/Fig_R4_platform.png">
+    <img src="assest/Fig_R4_platform.png" width="100%" alt="DriveHierarchy closed-loop platform: an interactive scenario editor with ego initialization, traffic placement, trajectory editing, and weather control, connected to CARLA–SUMO co-simulation and driving evaluation.">
+  </a>
+</p>
+<p align="center"><em>Design custom interactions visually, evaluate them in CARLA–SUMO, and inspect the resulting driving behavior.</em></p>
 
-Model presets are stored in [scripts/configs/models](scripts/configs/models). A recommended environment setup is:
+| What you can customize | Design possibilities |
+| :--- | :--- |
+| 🚗 **Ego vehicle** | Set the ego vehicle's initial placement and state. |
+| 🚶 **Traffic participants** | Place surrounding vehicles, pedestrians, and other dynamic actors to construct your own interactions. |
+| 🛣️ **Trajectories** | Edit actor trajectories to build encounters, merging maneuvers, yielding situations, and other driving challenges. |
+| 🌦️ **Weather** | Configure weather conditions to explore different driving environments. |
+
+**Create → Simulate → Inspect.** The platform connects scenario design to CARLA's rendering, vehicle physics, and sensors, with SUMO managing background traffic. Simulation logs and replay support failure analysis and further scenario refinement.
+
+### 🗺️ Scenario Coverage
+
+The benchmark provides **100 curated scenarios across 10 families** on a real-world road layout. The editor lets you create additional scenarios tailored to the behaviors you want to investigate.
+
+<p align="center">
+  <a href="assest/Fig_Rank_4_distribution.png">
+    <img src="assest/Fig_Rank_4_distribution.png" width="850" alt="Examples of driving interactions on the test-site road layout, including pedestrian encounters, obstacle avoidance, sudden braking, turning, intersections, merging, yielding, and roundabout navigation.">
+  </a>
+</p>
+<p align="center"><em>Representative scenario types distributed across the test-site road network.</em></p>
+
+Explore the [released scenarios](Close_Loop_Evaluation/Scenario_Onsite) or follow the [closed-loop evaluation guide](docs/evaluation.md#closed-loop-evaluation) to prepare the simulator and run R4.
+
+<a id="key-findings"></a>
+
+## 🔍 Key Findings
+
+The [paper](assest/DriveHierarchyNeurIPS.pdf) studies **15 open-source VLMs**, including generalist and driving-specialized models.
+
+- **Driving capabilities are related but distinct.** R1 and R2 are strongly associated (Spearman ρ = **0.843**), while their associations with R3 are weaker. A single aggregate score can hide meaningful differences between capability profiles.
+- **Open-loop understanding is informative about closed-loop behavior.** Correlations with R4 are **0.664** for R1, **0.596** for R2, and **0.418** for R3, motivating evaluation across both settings.
+- **Diagnosed weaknesses can guide improvement.** In the Qwen3-VL-8B-Instruct case study, jointly fine-tuning on the identified weak capability groups improves the average R4 score from **0.902 to 8.021**, without using R4 as a supervision target.
+
+These are results under the paper's evaluation protocol; the fine-tuning result is a case study on one base model. See **Tables 1–4** and **Figure 5** for full results and analysis.
+
+### 📈 Capability Profiles at a Glance
+
+The radar plots show how model strengths vary across individual open-loop tasks. The comparison below highlights capability profiles among representative **8B–12B models**.
+
+<p align="center">
+  <a href="assest/Fig_radar_midscale_comparison.png">
+    <img src="assest/Fig_radar_midscale_comparison.png" width="640" alt="Open-loop capability radar chart comparing Qwen3-VL-8B, InternVL3.5-8B, ZwZ-8B, MiniCPM-V-4.5, Gemma-3-12B, and Pixtral-12B.">
+  </a>
+</p>
+<p align="center"><em>Task-level profiles reveal strengths and weaknesses that an overall score can obscure.</em></p>
+
+<details>
+<summary><strong>🔎 Explore Qwen and InternVL model-family comparisons</strong></summary>
+
+<p align="center">
+  <a href="assest/Fig_radar_qwen.png"><img src="assest/Fig_radar_qwen.png" width="48%" alt="Open-loop capability profiles for Qwen3-VL at 2B, 8B, and 32B, and Qwen2.5-VL at 72B."></a>
+  <a href="assest/Fig_radar_internvl.png"><img src="assest/Fig_radar_internvl.png" width="48%" alt="Open-loop capability profiles for InternVL3.5 at 2B, 8B, and 38B, and InternVL3 at 78B."></a>
+</p>
+<p align="center"><em>Qwen series (left) and InternVL series (right). Click either plot to view it at full resolution.</em></p>
+
+</details>
+
+The figures use `R2-1-A`, `R2-1-B`, and `R2-1-C` for the tasks named `R2_1`, `R2_2_A`, and `R2_2_B` in the repository, respectively. All three plots assess R1–R3; closed-loop R4 is evaluated separately.
+
+<a id="quick-start"></a>
+
+## 🚀 Quick Start
+
+Start with open-loop evaluation. For CARLA–SUMO setup, scenario selection, output formats, and advanced options, see the **[complete evaluation guide](docs/evaluation.md)**.
+
+### 1. 🛠️ Install
 
 ```bash
+git clone https://github.com/PerfectXu88/DriveHierarchy.git
+cd DriveHierarchy
+
 conda create -n drivehierarchy_openloop python=3.10 -y
 conda activate drivehierarchy_openloop
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Notes:
+Run all commands from the repository root. Inference requires a compatible model runtime and sufficient hardware for the selected checkpoint; model-specific dependencies may also be needed.
 
-- `vllm` is only needed when you use the `vllm` backend.
-- `peft` is only needed for adapter / LoRA-style Transformers presets.
-- If a specific model family requires extra vendor packages, install them in the same Conda environment.
+### 2. 📦 Prepare data and check configuration
 
-### Closed-loop evaluation
+Task JSONL files are included in [Open_Loop_Evaluation](Open_Loop_Evaluation). **Prepare the referenced source imagery before inference** and make sure the image paths in the records resolve on your machine. Some records use absolute paths such as `/data/sets/nuscenes/...`; mount the data there or update those references. See [data and environment preparation](docs/evaluation.md#open-loop-environment).
 
-Closed-loop evaluation additionally requires:
-
-- CARLA runtime assets under [Close_Loop_Evaluation/Carla_Simulation](Close_Loop_Evaluation/Carla_Simulation), including separately distributed `CarlaUE4/` and `HDMaps/`
-- SUMO with a valid `SUMO_HOME`
-- Python dependencies from [Close_Loop_Evaluation/requirements.txt](Close_Loop_Evaluation/requirements.txt)
-- A working environment for [Close_Loop_Evaluation/VLM_Service](Close_Loop_Evaluation/VLM_Service)
-
-Typical closed-loop setup:
-
-```bash
-conda create -n drivehierarchy_closeloop python=3.10 -y
-conda activate drivehierarchy_closeloop
-pip install --upgrade pip
-pip install -r Close_Loop_Evaluation/requirements.txt
-export SUMO_HOME=/path/to/sumo
-```
-
-The open-source closed-loop presets use neutral runtime defaults:
-
-- `CARLA_PORT=2000`
-- `VLM_PORT=8000`
-- no fixed `runtime_gpu_id`
-- no fixed `service_conda_env`
-
-If needed, override these at runtime with environment variables such as `CARLA_PORT`, `VLM_PORT`, `RUNTIME_VLM_GPU_ID`, `VLM_SERVICE_CONDA_ENV`, and `VLM_SERVICE_PYTHON_BIN`.
-
-## 🔍 Open-Loop Evaluation
-
-### 1. List available model presets
-
-For `vllm`:
-
-```bash
-python scripts/run_open_loop_vllm.py --list-model-configs
-```
-
-For `transformers`:
-
-```bash
-python scripts/run_open_loop_transformers.py --list-model-configs
-```
-
-### 2. Run inference
-
-Run all open-loop tasks with a `vllm` preset:
-
-```bash
-bash scripts/run_open_loop.sh \
-  --backend vllm \
-  --config qwen3_vl_8b_instruct_vllm
-```
-
-Run with a `transformers` preset:
-
-```bash
-bash scripts/run_open_loop.sh \
-  --backend transformers \
-  --config qwen25_vl_drivelm_adapter_transformers
-```
-
-Run selected tasks only. `--datasets` accepts `all`, dataset names, file names, or comma-separated combinations:
-
-```bash
-bash scripts/run_open_loop.sh \
-  --backend vllm \
-  --config qwen3_vl_8b_instruct_vllm \
-  --datasets R1_1_A_Existence,R2_3_Spatial_Relations,R3_2_Sequential_Planning
-```
-
-Validate config and dataset resolution without loading a model:
+Validate the model preset and dataset selection without loading a model:
 
 ```bash
 bash scripts/run_open_loop.sh \
@@ -214,9 +210,9 @@ bash scripts/run_open_loop.sh \
   --dry-run
 ```
 
-### 3. Score results
+The dry-run checks configuration and dataset resolution; it does not validate image availability or GPU readiness.
 
-Run inference and scoring in one command:
+### 3. ▶️ Evaluate and score
 
 ```bash
 bash scripts/run_open_loop.sh \
@@ -225,164 +221,52 @@ bash scripts/run_open_loop.sh \
   --score
 ```
 
-Or score an existing result directory:
+Predictions are written to `result/open_loop/qwen3_vl_8b_instruct_vllm/`, with the score summary at `evaluation/final_score.json` inside that directory.
 
-```bash
-bash scripts/score_open_loop.sh \
-  --result-dir result/open_loop/qwen3_vl_8b_instruct_vllm
+**Next steps:** [Choose another model](scripts/configs/models) · [Use Transformers or selected tasks](docs/evaluation.md#open-loop-evaluation) · [Run closed-loop evaluation](docs/evaluation.md#closed-loop-evaluation).
+
+<a id="resources"></a>
+
+## 📚 Resources
+
+| Resource                             | Where to find it                                                             |
+| :----------------------------------- | :--------------------------------------------------------------------------- |
+| Paper                                | [DriveHierarchy · PDF](assest/DriveHierarchyNeurIPS.pdf)                     |
+| Dataset and simulator asset release  | [Hugging Face](https://huggingface.co/datasets/anonymous-2FD5/DriveHierarchy) |
+| Installation, inference, and scoring | [Evaluation guide](docs/evaluation.md)                                        |
+| Open-loop task records               | [Open_Loop_Evaluation](Open_Loop_Evaluation)                                  |
+| Closed-loop scenarios                | [Scenario_Onsite](Close_Loop_Evaluation/Scenario_Onsite)                      |
+| Model and runtime presets            | [scripts/configs](scripts/configs)                                            |
+| Questions and bug reports            | [GitHub Issues](https://github.com/PerfectXu88/DriveHierarchy/issues)         |
+
+**Closed-loop assets:** `CarlaUE4/` and `HDMaps/` are distributed separately from Git. Restore both under `Close_Loop_Evaluation/Carla_Simulation/` before running R4. See [external asset setup](docs/evaluation.md#external-assets).
+
+<a id="citation"></a>
+
+## 📝 Citation
+
+If DriveHierarchy supports your research, please cite our paper using the following provisional BibTeX entry:
+
+```bibtex
+@inproceedings{xu2026drivehierarchy,
+  title     = {{DriveHierarchy}: A Benchmark for Diagnosing {VLM} Driving Capabilities from Open-Loop Understanding to Closed-Loop Execution},
+  author    = {Xu, Chengkai and Liu, Jiaqi and Guo, Yicheng and Hang, Peng and Sun, Jian},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://github.com/PerfectXu88/DriveHierarchy}
+}
 ```
 
-If you want to skip `R1_4` Lingo-Judge scoring:
+<a id="license-and-intended-use"></a>
 
-```bash
-bash scripts/score_open_loop.sh \
-  --result-dir result/open_loop/qwen3_vl_8b_instruct_vllm \
-  --skip-l1-4
-```
+## 📄 License and Intended Use
 
-### 4. Open-loop outputs
+DriveHierarchy supports non-commercial research on capability measurement, controlled comparison, error analysis, and simulator-based experimentation. The [LICENSE](LICENSE) is the authoritative notice:
 
-By default, outputs are written under [result/open_loop](result/open_loop).
+- **Original annotations, scenario descriptions, and documentation:** CC BY-NC-SA 4.0.
+- **DriveHierarchy-authored source code:** Apache-2.0, unless otherwise stated.
+- **Third-party and derived material:** subject to the original source terms, including nuScenes/nuPlan, NAVSIM, Wayve LingoQA, HRI DRAMA, CARLA, SUMO, WOMD-Reasoning, and the Waymo Open Motion Dataset.
 
-For one model, the main artifacts are:
+**Research benchmark only.** R4 is evaluated in simulation. Benchmark scores do not certify real-world driving safety, reliability, legal compliance, or deployment readiness, and do not replace on-road validation, safety engineering, regulatory assessment, or qualified human oversight.
 
-- prediction files such as `R1_1_A_Existence_pred.jsonl`
-- evaluation summary at `<result_dir>/evaluation/final_score.json`
-
-## 🚘 Close-Loop Evaluation
-
-The standardized closed-loop runner is based on the `resume_stop_on_vlm_failure` workflow and uses:
-
-- [Close_Loop_Evaluation/Carla_Simulation](Close_Loop_Evaluation/Carla_Simulation)
-- [Close_Loop_Evaluation/VLM_Service](Close_Loop_Evaluation/VLM_Service)
-- [Close_Loop_Evaluation/Scenario_Onsite](Close_Loop_Evaluation/Scenario_Onsite)
-
-### 1. List available closed-loop presets
-
-```bash
-python scripts/close_loop_eval_cli.py list-model-configs
-```
-
-### 2. Run locally
-
-Dry-run first to validate config resolution and pending scenarios:
-
-```bash
-SUMO_HOME=/path/to/sumo \
-bash scripts/run_close_loop.sh \
-  --config gemma_3_12b_it \
-  --dry-run
-```
-
-Run the full closed-loop benchmark:
-
-```bash
-SUMO_HOME=/path/to/sumo \
-bash scripts/run_close_loop.sh \
-  --config gemma_3_12b_it
-```
-
-Run only one scenario file:
-
-```bash
-SUMO_HOME=/path/to/sumo \
-bash scripts/run_close_loop.sh \
-  --config gemma_3_12b_it \
-  --scenario-file Close_Loop_Evaluation/Scenario_Onsite/07_sudden_brake/SC20260323153401DBRL/entity.json
-```
-
-Override the output root:
-
-```bash
-SUMO_HOME=/path/to/sumo \
-bash scripts/run_close_loop.sh \
-  --config gemma_3_12b_it \
-  --result-root result_close_loop
-```
-
-### 3. Score closed-loop results
-
-Summarize all discovered `scene_score.json` files into a single CSV:
-
-```bash
-bash scripts/score_close_loop.sh --result-dir result
-```
-
-Or specify the output CSV path explicitly:
-
-```bash
-bash scripts/score_close_loop.sh \
-  --result-dir result \
-  --output-csv result/result_summary.csv
-```
-
-### 4. Closed-loop outputs
-
-For each executed scenario, the pipeline writes a `scene_score.json` file under the model-specific result tree. The final summary script writes:
-
-- `<result_dir>/result_summary.csv`
-
-The CSV contains averaged closed-loop metrics per scene and per model:
-
-- `avg_score_route`
-- `avg_score_safety`
-- `avg_score_efficiency`
-- `avg_score_penalty`
-- `avg_score_composed`
-
-## ⚙️ Configuration
-
-### Open-loop
-
-- Model presets: [scripts/configs/models](scripts/configs/models)
-- Dataset catalogs: [scripts/configs/datasets](scripts/configs/datasets)
-
-Each open-loop model preset uses the same schema, including:
-
-- `name`
-- `backend`
-- `family`
-- `model`
-- `generation`
-- `runtime`
-- `dataset_config`
-- `datasets`
-
-### Closed-loop
-
-- Model catalog: [scripts/configs/close_loop_models/catalog.json](scripts/configs/close_loop_models/catalog.json)
-- Runtime inference JSON files: [scripts/configs/close_loop_inference](scripts/configs/close_loop_inference)
-
-Each closed-loop preset defines:
-
-- a preset name
-- the inference JSON file to materialize at runtime
-- runtime service settings
-- CARLA port
-- GPU visibility
-
-## ⚠️ Intended Use and Safety Boundaries
-
-DriveHierarchy is intended for non-commercial research on model capability measurement, controlled comparison, error analysis, and simulator-based experimentation. It may help identify weaknesses in perception, memory, reasoning, and interactive execution under the benchmark conditions.
-
-It is not designed or validated for:
-
-- selecting a model for deployment in a real vehicle;
-- certifying driving safety, reliability, legal compliance, or robustness;
-- controlling a vehicle on public roads or in safety-critical environments;
-- replacing professional safety cases, closed-course tests, on-road tests, regulatory assessment, or qualified human supervision; or
-- making claims about people, locations, or driving conditions outside the represented datasets and simulator scenarios.
-
-## Data Sources and Licenses
-
-The [LICENSE](LICENSE) is the authoritative license notice for this release:
-
-- DriveHierarchy-authored dataset annotations and documentation are released under **CC BY-NC-SA 4.0**.
-- DriveHierarchy-authored source code is released under **Apache-2.0**, unless a file or directory states otherwise.
-- Third-party and derived material is **not relicensed** by DriveHierarchy and remains subject to its original terms. This includes nuScenes/nuPlan, NAVSIM, Wayve LingoQA, HRI DRAMA, CARLA, SUMO, WOMD-Reasoning, and the Waymo Open Motion Dataset.
-
-## 📝 Notes
-
-- The active closed-loop VLM service is [Close_Loop_Evaluation/VLM_Service](Close_Loop_Evaluation/VLM_Service).
-- The active CARLA simulation root is [Close_Loop_Evaluation/Carla_Simulation](Close_Loop_Evaluation/Carla_Simulation).
-- If you change dataset file names or scenario roots, update the corresponding JSON config files under [scripts/configs](scripts/configs).
+<p align="center"><a href="#top">Back to top ↑</a></p>
