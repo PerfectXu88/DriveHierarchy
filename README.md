@@ -2,7 +2,12 @@
 
 <div align="center">
 
-<h1>🚗 DriveHierarchy</h1>
+<!-- <h1>🚗 DriveHierarchy</h1> -->
+<p align="center">
+  <a href="assest/Brand.png">
+    <img src="assest/Brand.png" width="100%" alt="DriveHierarchy.">
+  </a>
+</p>
 
 <h3>A Benchmark for Diagnosing VLM Driving Capabilities<br>from Open-Loop Understanding to Closed-Loop Execution</h3>
 
