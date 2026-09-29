@@ -21,7 +21,6 @@
 </p>
 
 <p>
-  <!-- <a href="https://arxiv.org/abs/2609.31814"><img src="https://img.shields.io/badge/Paper-PDF-B45B42?style=flat-square" alt="Read the paper PDF"></a> -->
   <a href="https://arxiv.org/abs/2609.31814">
   <img src="https://img.shields.io/badge/arXiv-2609.31814-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv">
 </a>
