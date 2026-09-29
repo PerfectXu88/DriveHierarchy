@@ -14,7 +14,7 @@
 <p><strong>🎉DriveHierarchy is accpeted by NeurIPS 2026!</strong></p>
 
 <p>
-  Chengkai Xu<sup>1,</sup> &nbsp; Jiaqi Liu<sup>2,</sup> &nbsp; Yicheng Guo<sup>1,</sup> &nbsp; Peng Hang<sup>1</sup> &nbsp; Jian Sun<sup>1</sup>
+  Chengkai Xu<sup>1</sup> &nbsp; Jiaqi Liu<sup>2</sup> &nbsp; Yicheng Guo<sup>1</sup> &nbsp; Peng Hang<sup>1</sup> &nbsp; Jian Sun<sup>1</sup>
 </p>
 <p>
   <sup>1</sup> Tongji University &nbsp;&nbsp; <sup>2</sup> UNC Chapel Hill<br>
