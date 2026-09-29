@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  <a href="assest/DriveHierarchyNeurIPS.pdf"><img src="https://img.shields.io/badge/Paper-PDF-B45B42?style=flat-square" alt="Read the paper PDF"></a>
+  <a href="https://arxiv.org/abs/2609.31814"><img src="https://img.shields.io/badge/Paper-PDF-B45B42?style=flat-square" alt="Read the paper PDF"></a>
   <a href="https://huggingface.co/datasets/ChengkaiXu/DriveHierarchy"><img src="https://img.shields.io/badge/🤗%20Dataset-Hugging%20Face-E6B94D?style=flat-square" alt="Dataset on Hugging Face"></a>
   <a href="docs/evaluation.md"><img src="https://img.shields.io/badge/Evaluation-Get%20Started-48799B?style=flat-square" alt="Evaluation guide"></a>
   <a href="#citation"><img src="https://img.shields.io/badge/Cite-BibTeX-758558?style=flat-square" alt="Cite DriveHierarchy"></a>
