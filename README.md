@@ -66,7 +66,7 @@
 | :--------------: | :------------------: | :----------------: | :-------------------: | :----------: |
 |   **4**   |   **76,798**   |  **84,279**  |     **100**     | **15** |
 
-The corpus statistics describe the full benchmark in the [paper](assest/DriveHierarchyNeurIPS.pdf). Reported open-loop results use a refined **14,000-record evaluation set**, with **1,000 records per task**, as specified by the [active dataset catalog](scripts/configs/datasets/open_loop_all.json).
+The corpus statistics describe the full benchmark in the [paper](https://arxiv.org/abs/2609.31814). Reported open-loop results use a refined **14,000-record evaluation set**, with **1,000 records per task**, as specified by the [active dataset catalog](scripts/configs/datasets/open_loop_all.json).
 
 <a id="benchmark"></a>
 
@@ -151,7 +151,7 @@ Explore the [released scenarios](Close_Loop_Evaluation/Scenario_Onsite) or follo
 
 ## 🔍 Key Findings
 
-The [paper](assest/DriveHierarchyNeurIPS.pdf) studies **15 open-source VLMs**, including generalist and driving-specialized models.
+The [paper](https://arxiv.org/abs/2609.31814) studies **15 open-source VLMs**, including generalist and driving-specialized models.
 
 - **Driving capabilities are related but distinct.** R1 and R2 are strongly associated (Spearman ρ = **0.843**), while their associations with R3 are weaker. A single aggregate score can hide meaningful differences between capability profiles.
 - **Open-loop understanding is informative about closed-loop behavior.** Correlations with R4 are **0.664** for R1, **0.596** for R2, and **0.418** for R3, motivating evaluation across both settings.
@@ -237,7 +237,7 @@ Predictions are written to `result/open_loop/qwen3_vl_8b_instruct_vllm/`, with t
 
 | Resource                             | Where to find it                                                             |
 | :----------------------------------- | :--------------------------------------------------------------------------- |
-| Paper                                | [DriveHierarchy · PDF](assest/DriveHierarchyNeurIPS.pdf)                     |
+| Paper                                | [DriveHierarchy · PDF](https://arxiv.org/abs/2609.31814)                     |
 | Dataset and simulator asset release  | [Hugging Face](https://huggingface.co/datasets/anonymous-2FD5/DriveHierarchy) |
 | Installation, inference, and scoring | [Evaluation guide](docs/evaluation.md)                                        |
 | Open-loop task records               | [Open_Loop_Evaluation](Open_Loop_Evaluation)                                  |
