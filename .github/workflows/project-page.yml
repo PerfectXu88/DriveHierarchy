@@ -26,10 +26,16 @@ jobs:
           sparse-checkout: project-page
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Prepare static website
+        run: |
+          mkdir -p _site/assets
+          cp project-page/index.html project-page/style.css project-page/script.js _site/
+          cp project-page/assets/*.webp project-page/assets/*.svg _site/assets/
+          touch _site/.nojekyll
       - name: Upload static website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: project-page
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
